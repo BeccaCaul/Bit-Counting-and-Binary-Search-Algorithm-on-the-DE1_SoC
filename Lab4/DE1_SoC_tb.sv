@@ -1,0 +1,31 @@
+/* testbench for the DE1_SoC */
+module DE1_SoC_tb();
+
+  // define signals
+  logic       CLOCK_50;  // 50MHz clock
+  logic [6:0] HEX0, HEX1;  // active low
+  logic [8:0] SW;
+  logic [9:0] LEDR;
+  logic [3:0] KEY; //active low
+ 
+  
+  // instantiate module
+  DE1_SoC dut (.*);
+  
+  // define simulated clock
+  parameter T = 100;
+  initial begin
+    CLOCK_50 <= 0;
+    forever  #(T/2)  CLOCK_50 <= ~CLOCK_50;
+  end  // initial clock
+  
+  
+  initial begin
+//	 SW[0] = 1; KEY[0] = 0;            					@(posedge CLOCK_50); //wren = 1, clk = 1
+//	 SW[3:1] = 3'b001; SW[8:4] = 5'b00001;				@(posedge CLOCK_50); //write 001 to addr 00001
+//					KEY[0] = 1;						repeat(5)@(posedge CLOCK_50);
+	
+	$stop;
+	end
+  
+endmodule  // DE1_SoC_tb
