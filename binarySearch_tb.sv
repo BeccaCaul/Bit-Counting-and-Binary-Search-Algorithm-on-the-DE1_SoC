@@ -24,23 +24,21 @@ module binarySearch_tb ();
 	
 	integer i;
 
-	//assert (done) $display("T= %4t, value looking for (%8b) value found: %0d @ %4b", $time, A, found, Loc);                       
 	always_comb begin
 		if(done)
-			$display("T= %4t, value looking for (%8b) value found: %0d @ %4b", $time, A, found, Loc);                       
+			$display("T= %4t, VALUE: %8b | FOUND: %s | ADDRESS: %4b", $time, A, 
+					(found ? "YES" : "NO"), Loc);                       
 	end
 	initial begin 
 			reset = 1; s = 0; @(posedge clk);
 			reset = 0;			@(posedge clk);
 			
-			for (i = 0; i < 34; i++) begin  
+			for (i = 0; i < 2**W - 1; i++) begin  
 					  reset = 1; 	      @(posedge clk);
 					  reset = 0;			@(posedge clk);			
 		           A = i;														@(posedge clk);
 					  s = 1;														@(posedge clk);  // iterate through all possible values for A
 					  s = 0; 									            @(posedge done); // wait for posedge of done signal to display final result
-					  //$display("T= %4t, value looking for (%8b) value found: %0d @ %4b", $time, A, found, Loc); @(posedge clk);                       
-	
 		end
 		
 		@(posedge clk); // extra cycle

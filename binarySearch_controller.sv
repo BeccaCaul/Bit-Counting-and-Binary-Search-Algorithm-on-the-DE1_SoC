@@ -21,7 +21,7 @@ module binarySearch_controller (
     output logic done,
     output logic found );
 	
-  typedef enum logic [3:0] {IDLE, INIT, WAIT, COMPARE, REGMEM, WAIT2, UPDATE, FOUND, NOTFOUND} statetype;
+  typedef enum logic [3:0] {IDLE, INIT, WAIT, COMPARE, REGMEM, UPDATE, FOUND, NOTFOUND} statetype;
   statetype ps, ns;
  
   always_comb begin
@@ -38,8 +38,7 @@ module binarySearch_controller (
                 ns = REGMEM;
 			 end
 			 REGMEM: ns = UPDATE;
-		 	 UPDATE: ns = low_eq_high ? NOTFOUND : WAIT2;
-			 WAIT2: ns = WAIT;
+		 	 UPDATE: ns = low_eq_high ? NOTFOUND : WAIT;
 			 FOUND: ns = FOUND; //maybe swap later?
 			 NOTFOUND: ns = NOTFOUND;
 	   endcase

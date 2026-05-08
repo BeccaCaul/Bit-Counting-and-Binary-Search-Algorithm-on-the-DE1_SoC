@@ -27,8 +27,6 @@ module binarySearch #(parameter W = 8)(
     logic [7:0] mem_data;
  
     ram32x8 dataSet (.clock   (clk), .address (addr), .q (mem_data));
-			 
-	
 	
    //instantiate control and datapath
 	binarySearch_controller c_unit (.*);
