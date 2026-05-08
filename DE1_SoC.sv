@@ -33,6 +33,6 @@ module DE1_SoC #(parameter W=8)
   //INSTANTIATE -------------------------------------------------------------
 	bitCounter task1 (.s, .reset, .clk(CLOCK_50), .done, .A, .result);
 	
-	binarySearch task2 (
+	binarySearch task2 (.Start(s), .reset. .clk(CLOCK_50), .done, .found, .Loc, .A)
 
 endmodule
