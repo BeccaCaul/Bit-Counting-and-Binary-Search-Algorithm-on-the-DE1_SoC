@@ -10,10 +10,11 @@ module binarySearch #(parameter W = 8)(
 );
 	 
 	 //status signals
-	 logic low_gteq_high;   
+	 logic low_gt_high;   
     logic val_lt_mid;  
     logic val_gt_mid;   
-    logic val_found;    
+    logic val_found; 
+	 logic low_eq_high;
  
     // Control signals
     logic set_Loc;

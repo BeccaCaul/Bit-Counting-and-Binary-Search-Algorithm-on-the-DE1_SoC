@@ -6,10 +6,11 @@ module binarySearch_controller (
     input  logic reset,
     input  logic s,
     // Status signals
-    input  logic low_gteq_high,
+    input  logic low_gt_high,
     input  logic val_lt_mid,
     input  logic val_gt_mid,
     input  logic val_found,
+	 input logic low_eq_high,
     // Control signals
     output logic set_Loc,
     output logic clr_all,
@@ -20,7 +21,7 @@ module binarySearch_controller (
     output logic done,
     output logic found );
 	
-  typedef enum logic [2:0] {IDLE, INIT, WAIT, COMPARE, UPDATE, FOUND, NOTFOUND} statetype;
+  typedef enum logic [3:0] {IDLE, INIT, WAIT, COMPARE, REGMEM, WAIT2, UPDATE, FOUND, NOTFOUND} statetype;
   statetype ps, ns;
  
   always_comb begin
@@ -31,12 +32,14 @@ module binarySearch_controller (
 			 COMPARE: begin 
 				if (val_found)
                 ns = FOUND;
-            else if (low_gteq_high)
+            else if (low_gt_high)
                 ns = NOTFOUND;
             else
-                ns = UPDATE;
+                ns = REGMEM;
 			 end
-		 	 UPDATE: ns = WAIT;
+			 REGMEM: ns = UPDATE;
+		 	 UPDATE: ns = low_eq_high ? NOTFOUND : WAIT2;
+			 WAIT2: ns = WAIT;
 			 FOUND: ns = FOUND; //maybe swap later?
 			 NOTFOUND: ns = NOTFOUND;
 	   endcase
@@ -50,10 +53,10 @@ module binarySearch_controller (
 	
 	assign update_high = (ps == UPDATE) && val_lt_mid;
    assign update_low  = (ps == UPDATE) && val_gt_mid;
-	
 	assign set_Loc = (ps == COMPARE);
 	assign found = (ps == FOUND);
 	assign done = (ps == FOUND || ps == NOTFOUND);
+	
 	
 	always_ff @(posedge clk)
 		if (reset)

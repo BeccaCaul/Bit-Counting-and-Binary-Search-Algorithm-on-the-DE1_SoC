@@ -17,10 +17,11 @@ module binarySearch_datapath #(parameter W = 8)(
     // RAM address output (current mid)
     output logic [4:0]   addr,
     // Status signals
-    output logic         low_gteq_high,
+    output logic         low_gt_high,
     output logic         val_lt_mid,
     output logic         val_gt_mid,
     output logic         val_found,
+	 output logic 			 low_eq_high,
     // location of matching value
     output logic [4:0]   Loc
 );
@@ -44,7 +45,7 @@ module binarySearch_datapath #(parameter W = 8)(
 				if (set_Loc)
 					Loc <= mid;
 				if (set_mid) 
-					mid <= (low + high) >> 1;
+					mid <= low + ((high - low) >> 1);
 				if(update_high) 
 					high <= mid - 5'd1;
 				if(update_low) 
@@ -56,7 +57,8 @@ module binarySearch_datapath #(parameter W = 8)(
 	assign addr = mid;
 	
 	//assign ouputs
-	assign low_gteq_high = (low > high);
+	assign low_gt_high = (low > high);
+	assign low_eq_high = (low == high) && (A != mem_data);
 	assign val_lt_mid = (A < mem_data);
 	assign val_gt_mid = (A > mem_data);
 	assign val_found     = (mem_data == A);

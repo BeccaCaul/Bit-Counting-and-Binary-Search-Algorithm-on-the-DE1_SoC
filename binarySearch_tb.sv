@@ -33,7 +33,7 @@ module binarySearch_tb ();
 			reset = 1; s = 0; @(posedge clk);
 			reset = 0;			@(posedge clk);
 			
-			for (i = 0; i < 2**W; i++) begin  
+			for (i = 0; i < 34; i++) begin  
 					  reset = 1; 	      @(posedge clk);
 					  reset = 0;			@(posedge clk);			
 		           A = i;														@(posedge clk);
@@ -42,6 +42,7 @@ module binarySearch_tb ();
 					  //$display("T= %4t, value looking for (%8b) value found: %0d @ %4b", $time, A, found, Loc); @(posedge clk);                       
 	
 		end
+		
 		@(posedge clk); // extra cycle
 		$stop;
 	end
