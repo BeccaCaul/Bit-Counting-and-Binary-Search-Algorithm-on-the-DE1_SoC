@@ -504,3 +504,5 @@ do runlab.do
 # ** Note: $stop    : ./bitCounter_tb.sv(33)
 #    Time: 281950 ps  Iteration: 1  Instance: /bitCounter_tb
 # Break in Module bitCounter_tb at ./bitCounter_tb.sv line 33
+# End time: 18:44:53 on May 07,2026, Elapsed time: 2:47:03
+# Errors: 0, Warnings: 2

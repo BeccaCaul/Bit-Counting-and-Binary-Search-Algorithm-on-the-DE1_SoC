@@ -3,51 +3,63 @@
 
 
 //TODO: figure out what im interfacign with for addresses and shit
-module binarySearch_datapath #(parameter W = 8)(clk, reset,  shiftA, loadA, incr_result, 
-															clr_result, A, A_eq_0, a0, result);
-	
-	//Status signals: low_gteq_high, val_lt_mid, val_gt_mid, val_found
-	//Control signals: set_Loc, clr_found, clr_Loc, set_mid, update_high, update_low
+module binarySearch_datapath #(parameter W = 8)(
+    input  logic         clk,
+    input  logic         reset,
+    input  logic [W-1:0] A,
+    input  logic [7:0]   mem_data,
+    // Control signals
+    input  logic         set_Loc,
+    input  logic         clr_all,
+    input  logic         set_mid,
+    input  logic         update_high,
+    input  logic         update_low,
+    // RAM address output (current mid)
+    output logic [4:0]   addr,
+    // Status signals
+    output logic         low_gteq_high,
+    output logic         val_lt_mid,
+    output logic         val_gt_mid,
+    output logic         val_found,
+    // location of matching value
+    output logic [4:0]   Loc
+);
 
-	// port definitions
-	input logic clk, reset;
-	input logic set_Loc, clr_found, clr_Loc, set_mid, update_high, update_low;
-	input logic [W-1:0] A; //what im trying to find 
-	output logic [$clog(W)-1:0]  Loc; //check later
-	
-	logic low, mid, high;
+	logic [4:0] low, mid, high;
 	
 	// datapath logic
 	always_ff @(posedge clk) begin
-		if (loadA) begin
-			A1 <= A;
+		if (reset) begin
+          low  <= 5'd0;
+          high <= 5'd31;
+          mid  <= 5'd0;
+          Loc  <= 5'd0;
+		end else begin
+			if (clr_all) begin
+          low  <= 5'd0;
+          high <= 5'd31;
+          mid  <= 5'd0;
+          Loc  <= 5'd0;
+		   end else begin
+				if (set_Loc)
+					Loc <= mid;
+				if (set_mid) 
+					mid <= (low + high) >> 1;
+				if(update_high) 
+					high <= mid - 5'd1;
+				if(update_low) 
+					low  <= mid + 5'd1;	
+		   end
 		end
-		if (clr_all) begin
-			found <= 1'b0;
-			Loc <= 1'b0;
-			low <= 1'b0;
-			mid <= 1'b0;
-			high <= W-1'b1;
-		end
-		if (set_Loc) begin
-			Loc <= mid;
-		end
-		if (set_mid) begin
-			mid <= floor((low + high)/2)
-		end
-		if(update_high) begin
-			high <= mid - 1'b1;
-		end
-		if(update_low) begin
-			low <= mid + 1'b1;
-		end	
 	end //always_ff
+	
+	assign addr = mid;
 	
 	//assign ouputs
 	assign low_gteq_high = (low >= high);
-	assign val_lt_mid = (A < ROM[mid]);
-	assign val_gt_mid = (A > ROM[mid]);
-	assign val_found = (A == mid);
+	assign val_lt_mid = (A < mem_data);
+	assign val_gt_mid = (A > mem_data);
+	assign val_found     = (mem_data == A);
 
 
 endmodule 

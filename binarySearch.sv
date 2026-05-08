@@ -1,16 +1,32 @@
 //this is a bitcounting algorithm that counts the number of bits set to 1 in an n-bit input
-module binarySearch #(parameter W = 8)(input logic s, reset, clk,
-			  output logic done, Loc,
-			  input logic [W-1:0] A,
-			  output logic found);
-
-			  
-	//define status and control signals
-	//Status signals: counter_eq_logN, curr_lt_mid, curr_gt_mid, set_found ??
-	//Control signals: set_Loc, clr_found, clr_Loc, set_mid, update_high, update_low 
-
-	logic high_eq_low, curr_lt_mid, curr_gt_mid, set_found;
-	logic set_Loc, clr_found, clr_Loc, set_mid, update_high, update_low;
+module binarySearch #(parameter W = 8)(
+    input  logic         clk,
+    input  logic         reset,
+    input  logic         s,
+    input  logic [W-1:0] A,
+    output logic         done,
+    output logic         found,
+    output logic [4:0]   Loc
+);
+	 
+	 //status signals
+	 logic low_gteq_high;   
+    logic val_lt_mid;  
+    logic val_gt_mid;   
+    logic val_found;    
+ 
+    // Control signals
+    logic set_Loc;
+    logic clr_all;
+    logic set_mid;
+    logic update_high;
+    logic update_low;
+	 
+	 logic [4:0] addr;
+    logic [7:0] mem_data;
+ 
+    ram32x8 dataSet (.clock   (clk), .address (addr), .q (mem_data));
+			 
 	
 	
    //instantiate control and datapath

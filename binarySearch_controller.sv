@@ -1,43 +1,55 @@
 //this is the controller for the bit counting algorithm
 	//Status signals: low_gteq_high, val_lt_mid, val_gt_mid, val_found
 	//Control signals: set_Loc, clr_found, clr_Loc, set_mid, update_high, update_low
-module binarySearch_controller (clk, reset, s, low_gteq_high, curr_lt_mid, curr_gt_mid, 
-				val_found, set_Loc, clr_found, clr_Loc, set_mid, update_high, update_low);
-
-	input logic clk, reset;
-	input logic s, low_gteq_high, val_lt_mid, val_gt_mid, val_found;
-	output logic set_Loc, clr_all, set_mid, update_high, update_low;
-	//TODO: need to figure out bit width for these
+module binarySearch_controller (	 
+	 input  logic clk,
+    input  logic reset,
+    input  logic s,
+    // Status signals
+    input  logic low_gteq_high,
+    input  logic val_lt_mid,
+    input  logic val_gt_mid,
+    input  logic val_found,
+    // Control signals
+    output logic set_Loc,
+    output logic clr_all,
+    output logic set_mid,
+    output logic update_high,
+    output logic update_low,
+    // external outputs
+    output logic done,
+    output logic found );
 	
-  typedef enum logic [1:0] {IDLE, COMPARE, UPDATE, FOUND, NOTFOUND} statetype;
+  typedef enum logic [2:0] {IDLE, INIT, WAIT, COMPARE, UPDATE, FOUND, NOTFOUND} statetype;
   statetype ps, ns;
  
   always_comb begin
 	   case (ps)
 			 IDLE: ns = s ? COMPARE : IDLE; 
+			 INIT: ns = WAIT;
+			 WAIT: ns = COMPARE;
 			 COMPARE: begin 
-			 if (val_found)
+				if (val_found)
                 ns = FOUND;
             else if (low_gteq_high)
                 ns = NOTFOUND;
             else
                 ns = UPDATE;
 			 end
-		 	 UPDATE: ns = COMPARE;
-			 FOUND ns = s ? IDLE : FOUND;
-			 NOTFOUND ns = s ? IDLE : NOTFOUND;
+		 	 UPDATE: ns = WAIT;
+			 FOUND: ns = s ? IDLE : FOUND; //maybe swap later?
+			 NOTFOUND: ns = s ? IDLE : NOTFOUND;
 	   endcase
   end
   
   	// control signals
-	assign loadA = (ps == IDLE) && (s==0);
 	assign clr_all = (ps == IDLE);
 	
 	
-	assign set_mid = (ps == COMPARE);
+	assign set_mid = (ps == INIT) || (ps == UPDATE);
 	
-	assign update_high = (ps == UPDATE) && curr_lt_mid;
-   assign update_low  = (ps == UPDATE) && curr_gt_mid;
+	assign update_high = (ps == UPDATE) && val_lt_mid;
+   assign update_low  = (ps == UPDATE) && val_gt_mid;
 	
 	assign set_Loc = (ps == FOUND);
 	assign found = (ps == FOUND);
