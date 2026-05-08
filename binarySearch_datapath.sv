@@ -56,7 +56,7 @@ module binarySearch_datapath #(parameter W = 8)(
 	assign addr = mid;
 	
 	//assign ouputs
-	assign low_gteq_high = (low >= high);
+	assign low_gteq_high = (low > high);
 	assign val_lt_mid = (A < mem_data);
 	assign val_gt_mid = (A > mem_data);
 	assign val_found     = (mem_data == A);

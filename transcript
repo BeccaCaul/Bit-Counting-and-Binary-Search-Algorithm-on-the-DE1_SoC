@@ -680,3 +680,1782 @@ restart
 # ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
 run -all
 # T= 2750, value looking for (00000000) value found: 0 @ 0000
+run
+add wave -position end  sim:/binarySearch_tb/dut/d_init/update_high
+add wave -position end  sim:/binarySearch_tb/dut/d_init/update_low
+add wave -position 14  sim:/binarySearch_tb/dut/d_init/set_mid
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/task2_wave.do
+run -all
+add wave -position 9  sim:/binarySearch_tb/dut/d_init/low
+step -over
+add wave -position 9  sim:/binarySearch_tb/dut/d_init/high
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/task2_wave.do
+run -all
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:05 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 12:57:06 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:06 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 12:57:06 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:06 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 12:57:06 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:06 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 12:57:06 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:06 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:57:06 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:06 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 12:57:06 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:06 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 12:57:06 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:06 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 12:57:06 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:07 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 12:57:07 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:07 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 12:57:07 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:57:07 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 12:57:07 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:57:09 on May 08,2026, Elapsed time: 0:16:44
+# Errors: 0, Warnings: 11
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 12:57:09 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftty06e2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftty06e2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2750, value looking for (00000000) value found: 0 @ 0000
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:16 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:00:16 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:16 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:00:17 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:17 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:00:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:17 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:00:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:17 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:00:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:17 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:00:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:17 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:00:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:17 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:00:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:17 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:00:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:17 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:00:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:00:17 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:00:18 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 13:00:19 on May 08,2026, Elapsed time: 0:03:10
+# Errors: 0, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:00:20 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlft5jtts6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5jtts6
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 1850, value looking for (00000000) value found: 0 @ 0000
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:18 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:03:19 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:19 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:03:19 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:19 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:03:19 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:19 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:03:19 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:19 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:03:19 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:19 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:03:19 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:19 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:03:19 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:19 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:03:19 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:19 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:03:19 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:20 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:03:20 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:03:20 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:03:20 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:03:22 on May 08,2026, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:03:22 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftb7hfbw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb7hfbw
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:08 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:06:08 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:08 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:06:08 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:08 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:06:08 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:08 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:06:08 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:08 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:06:08 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:09 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:06:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:09 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:06:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:09 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:06:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:09 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:06:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:09 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:06:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:09 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:06:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:06:11 on May 08,2026, Elapsed time: 0:02:49
+# Errors: 0, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:06:11 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftwy36nc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwy36nc
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 1850, value looking for (00000000) value found: 0 @ 0000
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:37 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:16:37 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:37 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:16:37 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:37 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:16:37 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:37 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:16:37 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:37 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:16:37 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:37 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:16:37 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:38 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:16:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:38 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:16:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:38 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:16:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:38 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:16:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:38 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:16:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:16:40 on May 08,2026, Elapsed time: 0:10:29
+# Errors: 0, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:16:40 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftbxs8bk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbxs8bk
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2150, value looking for (00000000) value found: 1 @ 0000
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:41 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:22:41 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:41 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:22:41 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:42 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:22:42 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:42 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:22:42 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:42 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:22:42 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:42 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# ** Error: (vlog-13069) ./binarySearch_controller.sv(40): near ";": syntax error, unexpected ';'.
+# ** Error: (vlog-13069) ./binarySearch_controller.sv(41): near ";": syntax error, unexpected ';'.
+# End time: 13:22:42 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 12
+# C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./binarySearch_controller.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:56 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:22:56 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:56 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:22:56 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:56 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:22:56 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:56 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:22:56 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:56 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:22:57 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:57 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:22:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:57 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:22:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:57 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:22:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:57 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:22:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:57 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:22:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:22:57 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:22:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:22:59 on May 08,2026, Elapsed time: 0:06:19
+# Errors: 5, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:22:59 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftka1csr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftka1csr
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2150, value looking for (00000000) value found: 1 @ 0000
+# T= 3950, value looking for (00000001) value found: 1 @ 0000
+# T= 6050, value looking for (00000010) value found: 0 @ 0000
+# T= 7550, value looking for (00000011) value found: 1 @ 0000
+# T= 9650, value looking for (00000100) value found: 0 @ 0000
+# T= 11750, value looking for (00000101) value found: 0 @ 0000
+# T= 13850, value looking for (00000110) value found: 0 @ 0000
+# T= 15050, value looking for (00000111) value found: 1 @ 0000
+# T= 17150, value looking for (00001000) value found: 0 @ 0000
+# T= 19250, value looking for (00001001) value found: 0 @ 0000
+# T= 21350, value looking for (00001010) value found: 0 @ 0000
+# T= 23450, value looking for (00001011) value found: 0 @ 0000
+# T= 25550, value looking for (00001100) value found: 0 @ 0000
+# T= 27650, value looking for (00001101) value found: 0 @ 0000
+# T= 29750, value looking for (00001110) value found: 0 @ 0000
+# T= 30350, value looking for (00001111) value found: 1 @ 0000
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:16 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:28:16 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:16 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:28:16 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:16 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:28:16 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:16 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:28:16 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:16 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:28:16 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:16 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:28:17 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:17 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:28:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:17 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:28:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:17 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:28:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:17 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:28:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:17 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:28:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:28:19 on May 08,2026, Elapsed time: 0:05:20
+# Errors: 0, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:28:19 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftvjdbxg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvjdbxg
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2350, value looking for (00000000) value found: 1 @ 0000
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:56 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:28:56 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:56 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:28:57 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:57 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:28:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:57 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:28:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:57 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:28:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:57 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:28:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:57 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:28:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:57 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:28:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:57 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# ** Error: (vlog-13069) ./binarySearch_tb.sv(36): near "$display": syntax error, unexpected SYSTEM_IDENTIFIER, expecting "SystemVerilog keyword 'property'".
+# End time: 13:28:57 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 15
+# C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./binarySearch_tb.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:13 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:29:14 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:14 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:29:14 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:14 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:29:14 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:14 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:29:14 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:14 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:29:14 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:14 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:29:14 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:14 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:29:14 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:14 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:29:14 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:14 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:29:14 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:15 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:29:15 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:15 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:29:15 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:29:17 on May 08,2026, Elapsed time: 0:00:58
+# Errors: 4, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:29:17 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlft5mskv7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5mskv7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+run -all
+do rubnl
+# Cannot open macro file: rubnl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:00 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:30:00 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:00 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:30:00 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:00 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:30:01 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:01 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:30:01 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:01 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:30:01 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:01 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:30:01 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:01 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:30:01 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:01 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:30:01 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:01 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:30:01 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:01 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:30:01 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:01 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:30:01 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:30:03 on May 08,2026, Elapsed time: 0:00:46
+# Errors: 1, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:30:04 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftb0e9a0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb0e9a0
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:31 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:32:31 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:31 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:32:31 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:31 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:32:31 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:31 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:32:31 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:31 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:32:31 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:31 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:32:31 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:31 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:32:31 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:31 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:32:31 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:31 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# ** Error: (vlog-13069) ./binarySearch_tb.sv(27): near "(": syntax error, unexpected '(', expecting "SystemVerilog keyword 'property'".
+# End time: 13:32:31 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 15
+# C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./binarySearch_tb.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:37 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:34:37 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:37 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:34:38 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:38 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:34:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:38 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:34:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:38 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:34:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:38 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:34:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:38 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:34:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:38 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:34:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:38 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:34:38 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:38 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:34:39 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:39 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:34:39 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:34:40 on May 08,2026, Elapsed time: 0:04:36
+# Errors: 4, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:34:40 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlft4h3ea3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4h3ea3
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2350, value looking for (00000000) value found: 1 @ 0000
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:51 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:35:51 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:51 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:35:51 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:51 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:35:51 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:51 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:35:52 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:52 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:35:52 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:52 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:35:52 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:52 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:35:52 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:52 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:35:52 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:52 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:35:52 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:52 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:35:52 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:52 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:35:52 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:35:54 on May 08,2026, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:35:54 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlft3fv9kg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3fv9kg
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2350, value looking for (00000000) value found: 1 @ 0000
+# T= 4350, value looking for (00000001) value found: 1 @ 0001
+# T= 6650, value looking for (00000010) value found: 0 @ 0000
+# T= 8350, value looking for (00000011) value found: 1 @ 0011
+# T= 10650, value looking for (00000100) value found: 0 @ 0010
+# T= 12950, value looking for (00000101) value found: 0 @ 0010
+# T= 15250, value looking for (00000110) value found: 0 @ 0010
+# T= 16650, value looking for (00000111) value found: 1 @ 0111
+# T= 18950, value looking for (00001000) value found: 0 @ 0110
+# T= 21250, value looking for (00001001) value found: 0 @ 0110
+# T= 23550, value looking for (00001010) value found: 0 @ 0110
+# T= 25850, value looking for (00001011) value found: 0 @ 0110
+# T= 28150, value looking for (00001100) value found: 0 @ 0110
+# T= 30450, value looking for (00001101) value found: 0 @ 0110
+# T= 32750, value looking for (00001110) value found: 0 @ 0110
+# T= 33550, value looking for (00001111) value found: 1 @ 1111
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:17 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 13:37:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:17 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 13:37:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:17 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 13:37:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:17 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 13:37:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:17 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:37:17 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:18 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 13:37:18 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:18 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 13:37:18 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:18 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 13:37:18 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:18 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 13:37:18 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:18 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 13:37:18 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:18 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 13:37:18 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:37:20 on May 08,2026, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 13:37:20 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlft1w7kxy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1w7kxy
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2350, value looking for (00000000) value found: 1 @ 0000
+# T= 4250, value looking for (00000001) value found: 1 @ 0001
+# T= 6450, value looking for (00000010) value found: 0 @ 0000
+# T= 8050, value looking for (00000011) value found: 1 @ 0011
+# T= 10250, value looking for (00000100) value found: 0 @ 0010
+# T= 12450, value looking for (00000101) value found: 0 @ 0010
+# T= 14650, value looking for (00000110) value found: 0 @ 0010
+# T= 15950, value looking for (00000111) value found: 1 @ 0111
+# T= 18150, value looking for (00001000) value found: 0 @ 0110
+# T= 20350, value looking for (00001001) value found: 0 @ 0110
+# T= 22550, value looking for (00001010) value found: 0 @ 0110
+# T= 24750, value looking for (00001011) value found: 0 @ 0110
+# T= 26950, value looking for (00001100) value found: 0 @ 0110
+# T= 29150, value looking for (00001101) value found: 0 @ 0110
+# T= 31350, value looking for (00001110) value found: 0 @ 0110
+# T= 32050, value looking for (00001111) value found: 1 @ 1111
+add wave -position 14  sim:/binarySearch_tb/dut/d_init/low_gteq_high
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/task2_wave.do
+run -all

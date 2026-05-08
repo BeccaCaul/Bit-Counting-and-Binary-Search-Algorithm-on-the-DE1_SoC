@@ -37,8 +37,8 @@ module binarySearch_controller (
                 ns = UPDATE;
 			 end
 		 	 UPDATE: ns = WAIT;
-			 FOUND: ns = s ? IDLE : FOUND; //maybe swap later?
-			 NOTFOUND: ns = s ? IDLE : NOTFOUND;
+			 FOUND: ns = FOUND; //maybe swap later?
+			 NOTFOUND: ns = NOTFOUND;
 	   endcase
   end
   
@@ -46,12 +46,12 @@ module binarySearch_controller (
 	assign clr_all = (ps == IDLE);
 	
 	
-	assign set_mid = (ps == INIT) || (ps == UPDATE);
+	assign set_mid = (ps == INIT) || (ps == COMPARE);
 	
 	assign update_high = (ps == UPDATE) && val_lt_mid;
    assign update_low  = (ps == UPDATE) && val_gt_mid;
 	
-	assign set_Loc = (ps == FOUND);
+	assign set_Loc = (ps == COMPARE);
 	assign found = (ps == FOUND);
 	assign done = (ps == FOUND || ps == NOTFOUND);
 	

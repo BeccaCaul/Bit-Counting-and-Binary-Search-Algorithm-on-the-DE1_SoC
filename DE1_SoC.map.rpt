@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Fri May  8 11:52:28 2026
+Fri May  8 13:34:06 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Fri May  8 11:52:27 2026               ;
+; Analysis & Synthesis Status ; Failed - Fri May  8 13:34:05 2026               ;
 ; Quartus Prime Version       ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name               ; DE1_SoC                                         ;
 ; Top-level Entity Name       ; binarySearch_tb                                 ;
@@ -162,7 +162,7 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Fri May  8 11:52:16 2026
+    Info: Processing started: Fri May  8 13:33:54 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -186,22 +186,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file binarys
     Info (12023): Found entity 1: binarySearch File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file binarysearch_controller.sv
     Info (12023): Found entity 1: binarySearch_controller File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_controller.sv Line: 4
+Info (12021): Found 0 design units, including 0 entities, in source file de1_soc_tb.sv
+Error (10170): Verilog HDL syntax error at binarySearch_tb.sv(27) near text: "(";  expecting "property". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_tb.sv Line: 27
+Error (10149): Verilog HDL Declaration error at binarySearch_tb.sv(27): identifier "A" is already declared in the present scope File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_tb.sv Line: 27
+Error (10149): Verilog HDL Declaration error at binarySearch_tb.sv(27): identifier "found" is already declared in the present scope File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_tb.sv Line: 27
+Error (10149): Verilog HDL Declaration error at binarySearch_tb.sv(27): identifier "Loc" is already declared in the present scope File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_tb.sv Line: 27
+Error (10170): Verilog HDL syntax error at binarySearch_tb.sv(27) near text: ")";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_tb.sv Line: 27
+Error (10112): Ignored design unit "binarySearch_tb" at binarySearch_tb.sv(3) due to previous errors File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_tb.sv Line: 3
+Info (12021): Found 0 design units, including 0 entities, in source file binarysearch_tb.sv
 Info (12021): Found 1 design units, including 1 entities, in source file ram32x8.v
     Info (12023): Found entity 1: ram32x8 File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/ram32x8.v Line: 40
-Info (12021): Found 0 design units, including 0 entities, in source file de1_soc_tb.sv
-Info (12021): Found 1 design units, including 1 entities, in source file binarysearch_tb.sv
-    Info (12023): Found entity 1: binarySearch_tb File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_tb.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at DE1_SoC.sv(45): created implicit net for "task_toggle" File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/DE1_SoC.sv Line: 45
-Info (12127): Elaborating entity "binarySearch_tb" for the top level hierarchy
-Error (10119): Verilog HDL Loop Statement error at binarySearch_tb.sv(19): loop with non-constant loop condition must terminate within 250 iterations File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_tb.sv Line: 19
-Warning (10855): Verilog HDL warning at binarySearch_tb.sv(16): initial value for variable clk should be constant File: C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/binarySearch_tb.sv Line: 16
-Error (12153): Can't elaborate top-level user hierarchy
 Info (144001): Generated suppressed messages file C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/DE1_SoC.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 3 warnings
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
     Error: Peak virtual memory: 4800 megabytes
-    Error: Processing ended: Fri May  8 11:52:28 2026
+    Error: Processing ended: Fri May  8 13:34:06 2026
     Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:28
+    Error: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

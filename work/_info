@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/becca/Documents/ee271/lab1
 vbinarySearch
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1778269223
+Z2 !s110 1778272638
 !i10b 1
 !s100 <Q2iV?GQLiWRk3Q55bhQh1
 I4VJz<2>lonbQm4dcZi7DL1
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1778269223.000000
+Z6 !s108 1778272638.000000
 !s107 ./binarySearch.sv|
 !s90 -reportprogress|300|./binarySearch.sv|
 !i113 1
@@ -34,15 +34,15 @@ Z7 tCvgOpt 0
 nbinary@search
 vbinarySearch_controller
 R1
-Z8 !s110 1778269222
+R2
 !i10b 1
-!s100 4`L<z0EUMBKRH94PBgPP62
-Ii]]>TY>Uz[Zo30=5P?RIN0
+!s100 DDo0`A<8T;mP0>Dakh4XN0
+IH^Zh2Kzb<ozJEXLnzhCRP1
 R3
 !s105 binarySearch_controller_sv_unit
 S1
 R4
-w1778269122
+w1778272023
 8./binarySearch_controller.sv
 F./binarySearch_controller.sv
 L0 4
@@ -50,7 +50,7 @@ R5
 r1
 !s85 0
 31
-Z9 !s108 1778269222.000000
+R6
 !s107 ./binarySearch_controller.sv|
 !s90 -reportprogress|300|./binarySearch_controller.sv|
 !i113 1
@@ -58,15 +58,15 @@ R7
 nbinary@search_controller
 vbinarySearch_datapath
 R1
-R8
+R2
 !i10b 1
-!s100 dQSf;lGJeF3CzQe1F5e<=0
-I6j>VEB4co;z<OenHG3M^82
+!s100 lI=UXO:O6g66aBYiHm45d1
+I@A[[6K?JI_ll116g`mkJi1
 R3
 !s105 binarySearch_datapath_sv_unit
 S1
 R4
-w1778268386
+w1778271143
 8./binarySearch_datapath.sv
 F./binarySearch_datapath.sv
 L0 6
@@ -74,7 +74,7 @@ R5
 r1
 !s85 0
 31
-R9
+R6
 !s107 ./binarySearch_datapath.sv|
 !s90 -reportprogress|300|./binarySearch_datapath.sv|
 !i113 1
@@ -84,13 +84,13 @@ vbinarySearch_tb
 R1
 R2
 !i10b 1
-!s100 _lI5ZhBkiV9]_Tk52?R5b0
-I=Hb_DJ>MF>VhA0>eeF6G43
+!s100 _V6In8N7P0JE;>49DTmZB0
+Io_VAT9RRF][PE^QBcPdiz3
 R3
 !s105 binarySearch_tb_sv_unit
 S1
 R4
-w1778266546
+w1778272633
 8./binarySearch_tb.sv
 F./binarySearch_tb.sv
 L0 3
@@ -106,7 +106,7 @@ R7
 nbinary@search_tb
 vbitCounter
 R1
-R8
+Z8 !s110 1778272637
 !i10b 1
 !s100 GGQJA?]ZDST?<B0LLF5>R0
 IXG_2;2I2W6AO=Lm3]Q<Fk3
@@ -122,7 +122,7 @@ R5
 r1
 !s85 0
 31
-R9
+Z9 !s108 1778272637.000000
 !s107 ./bitCounter.sv|
 !s90 -reportprogress|300|./bitCounter.sv|
 !i113 1
