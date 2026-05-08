@@ -2,507 +2,681 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:21 on May 07,2026
+# Start time: 12:25:10 on May 08,2026
 # vlog -reportprogress 300 ./bitCounter_controller.sv 
 # -- Compiling module bitCounter_controller
-# ** Error: ./bitCounter_controller.sv(16): (vlog-2730) Undefined variable: 'S0'.
-# End time: 15:51:21 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 12:25:10 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:10 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 12:25:10 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:10 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 12:25:11 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:11 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 12:25:11 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:11 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:25:11 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:11 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 12:25:11 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:11 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# ** Error (suppressible): (vlog-12003) ./binarySearch_datapath.sv(63): Variable 'low_gteq_high' written by continuous and procedural assignments. See ./binarySearch_datapath.sv(38). 
+# ** Error (suppressible): (vlog-12003) ./binarySearch_datapath.sv(64): Variable 'val_lt_mid' written by continuous and procedural assignments. See ./binarySearch_datapath.sv(39). 
+# ** Error (suppressible): (vlog-12003) ./binarySearch_datapath.sv(65): Variable 'val_gt_mid' written by continuous and procedural assignments. See ./binarySearch_datapath.sv(40). 
+# ** Error (suppressible): (vlog-12003) ./binarySearch_datapath.sv(66): Variable 'val_found' written by continuous and procedural assignments. See ./binarySearch_datapath.sv(37). 
+# End time: 12:25:11 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
 # ** Error: C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 7
+# Error in macro ./runlab.do line 13
 # C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog "./bitCounter_controller.sv""
+# "vlog "./binarySearch_datapath.sv""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:14 on May 07,2026
+# Start time: 12:25:35 on May 08,2026
 # vlog -reportprogress 300 ./bitCounter_controller.sv 
 # -- Compiling module bitCounter_controller
 # 
 # Top level modules:
 # 	bitCounter_controller
-# End time: 15:52:15 on May 07,2026, Elapsed time: 0:00:01
+# End time: 12:25:35 on May 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:15 on May 07,2026
+# Start time: 12:25:35 on May 08,2026
 # vlog -reportprogress 300 ./bitCounter_datapath.sv 
 # -- Compiling module bitCounter_datapath
 # 
 # Top level modules:
 # 	bitCounter_datapath
-# End time: 15:52:15 on May 07,2026, Elapsed time: 0:00:00
+# End time: 12:25:35 on May 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:15 on May 07,2026
+# Start time: 12:25:35 on May 08,2026
 # vlog -reportprogress 300 ./bitCounter.sv 
 # -- Compiling module bitCounter
-# ** Error: (vlog-13069) ./bitCounter.sv(5): near ")": syntax error, unexpected ')'.
-# End time: 15:52:15 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 12:25:36 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:36 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 12:25:36 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:36 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:25:36 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:36 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 12:25:36 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:36 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# ** Error (suppressible): (vlog-12003) ./binarySearch_datapath.sv(63): Variable 'low_gteq_high' written by continuous and procedural assignments. See ./binarySearch_datapath.sv(38). 
+# ** Error (suppressible): (vlog-12003) ./binarySearch_datapath.sv(64): Variable 'val_lt_mid' written by continuous and procedural assignments. See ./binarySearch_datapath.sv(39). 
+# ** Error (suppressible): (vlog-12003) ./binarySearch_datapath.sv(65): Variable 'val_gt_mid' written by continuous and procedural assignments. See ./binarySearch_datapath.sv(40). 
+# ** Error (suppressible): (vlog-12003) ./binarySearch_datapath.sv(66): Variable 'val_found' written by continuous and procedural assignments. See ./binarySearch_datapath.sv(37). 
+# End time: 12:25:36 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
 # ** Error: C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
+# Error in macro ./runlab.do line 13
 # C:/Users/becca/Documents/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog "./bitCounter.sv""
+# "vlog "./binarySearch_datapath.sv""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:30 on May 07,2026
+# Start time: 12:26:42 on May 08,2026
 # vlog -reportprogress 300 ./bitCounter_controller.sv 
 # -- Compiling module bitCounter_controller
 # 
 # Top level modules:
 # 	bitCounter_controller
-# End time: 15:52:30 on May 07,2026, Elapsed time: 0:00:00
+# End time: 12:26:42 on May 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:30 on May 07,2026
+# Start time: 12:26:42 on May 08,2026
 # vlog -reportprogress 300 ./bitCounter_datapath.sv 
 # -- Compiling module bitCounter_datapath
 # 
 # Top level modules:
 # 	bitCounter_datapath
-# End time: 15:52:30 on May 07,2026, Elapsed time: 0:00:00
+# End time: 12:26:42 on May 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:30 on May 07,2026
+# Start time: 12:26:42 on May 08,2026
 # vlog -reportprogress 300 ./bitCounter.sv 
 # -- Compiling module bitCounter
 # 
 # Top level modules:
 # 	bitCounter
-# End time: 15:52:30 on May 07,2026, Elapsed time: 0:00:00
+# End time: 12:26:42 on May 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:30 on May 07,2026
+# Start time: 12:26:42 on May 08,2026
 # vlog -reportprogress 300 ./bitCounter_tb.sv 
 # -- Compiling module bitCounter_tb
 # 
 # Top level modules:
 # 	bitCounter_tb
-# End time: 15:52:30 on May 07,2026, Elapsed time: 0:00:00
+# End time: 12:26:43 on May 08,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:30 on May 07,2026
+# Start time: 12:26:43 on May 08,2026
 # vlog -reportprogress 300 ./DE1_SoC.sv 
 # -- Compiling module DE1_SoC
 # 
 # Top level modules:
 # 	DE1_SoC
-# End time: 15:52:30 on May 07,2026, Elapsed time: 0:00:00
+# End time: 12:26:43 on May 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work hw3p3_tb 
-# Start time: 15:52:32 on May 07,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:26:43 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 12:26:43 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:26:43 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 12:26:43 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:26:43 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 12:26:43 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:26:43 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 12:26:43 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:26:43 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 12:26:43 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:26:43 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 12:26:43 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 12:26:43 on May 08,2026
 # Loading sv_std.std
-# Loading work.hw3p3_tb
-# Loading work.hw3p3
-# ** Error: Cannot open macro file: task1_wave.do
-# Error in macro ./runlab.do line 21
-# Cannot open macro file: task1_wave.do
-#     while executing
-# "do task1_wave.do"
-add wave -position end  sim:/hw3p3_tb/clk
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
-#           Attempting to use alternate WLF file "./wlftwg6s2r".
+#           Attempting to use alternate WLF file "./wlft58d1eq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftwg6s2r
-add wave -position end  sim:/hw3p3_tb/reset
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:58 on May 07,2026
-# vlog -reportprogress 300 ./bitCounter_controller.sv 
-# -- Compiling module bitCounter_controller
-# 
-# Top level modules:
-# 	bitCounter_controller
-# End time: 15:53:58 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:59 on May 07,2026
-# vlog -reportprogress 300 ./bitCounter_datapath.sv 
-# -- Compiling module bitCounter_datapath
-# 
-# Top level modules:
-# 	bitCounter_datapath
-# End time: 15:53:59 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:59 on May 07,2026
-# vlog -reportprogress 300 ./bitCounter.sv 
-# -- Compiling module bitCounter
-# 
-# Top level modules:
-# 	bitCounter
-# End time: 15:53:59 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:59 on May 07,2026
-# vlog -reportprogress 300 ./bitCounter_tb.sv 
-# -- Compiling module bitCounter_tb
-# 
-# Top level modules:
-# 	bitCounter_tb
-# End time: 15:53:59 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:59 on May 07,2026
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 15:53:59 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:54:00 on May 07,2026, Elapsed time: 0:01:28
-# Errors: 3, Warnings: 2
-# vsim -voptargs=""+acc"" -t 1ps -lib work bitCounter_tb 
-# Start time: 15:54:00 on May 07,2026
-# Loading sv_std.std
-# Loading work.bitCounter_tb
-# Loading work.bitCounter
-# Loading work.bitCounter_controller
-# Loading work.bitCounter_datapath
-# ** Error: Cannot open macro file: task1_wave.do
-# Error in macro ./runlab.do line 21
-# Cannot open macro file: task1_wave.do
-#     while executing
-# "do task1_wave.do"
-add wave -position end  sim:/bitCounter_tb/A
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
-#           Attempting to use alternate WLF file "./wlftd50bm9".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftd50bm9
-add wave -position 0  sim:/bitCounter_tb/clk
-add wave -position 1  sim:/bitCounter_tb/reset
-add wave -position end  sim:/bitCounter_tb/result
-add wave -position end  sim:/bitCounter_tb/done
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/task1_wave.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:49 on May 07,2026
-# vlog -reportprogress 300 ./bitCounter_controller.sv 
-# -- Compiling module bitCounter_controller
-# 
-# Top level modules:
-# 	bitCounter_controller
-# End time: 15:57:49 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:49 on May 07,2026
-# vlog -reportprogress 300 ./bitCounter_datapath.sv 
-# -- Compiling module bitCounter_datapath
-# 
-# Top level modules:
-# 	bitCounter_datapath
-# End time: 15:57:49 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:49 on May 07,2026
-# vlog -reportprogress 300 ./bitCounter.sv 
-# -- Compiling module bitCounter
-# 
-# Top level modules:
-# 	bitCounter
-# End time: 15:57:49 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:49 on May 07,2026
-# vlog -reportprogress 300 ./bitCounter_tb.sv 
-# -- Compiling module bitCounter_tb
-# 
-# Top level modules:
-# 	bitCounter_tb
-# End time: 15:57:49 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:49 on May 07,2026
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 15:57:49 on May 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:57:50 on May 07,2026, Elapsed time: 0:03:50
-# Errors: 3, Warnings: 2
-# vsim -voptargs=""+acc"" -t 1ps -lib work bitCounter_tb 
-# Start time: 15:57:50 on May 07,2026
-# Loading sv_std.std
-# Loading work.bitCounter_tb
-# Loading work.bitCounter
-# Loading work.bitCounter_controller
-# Loading work.bitCounter_datapath
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
-#           Attempting to use alternate WLF file "./wlftfwstkk".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfwstkk
+#           Using alternate file: ./wlft58d1eq
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# T=  450, countOnes(00000000) returned 0
-# T=  950, countOnes(00000001) returned 1
-# T= 1550, countOnes(00000010) returned 1
-# T= 2150, countOnes(00000011) returned 2
-# T= 2850, countOnes(00000100) returned 1
-# T= 3550, countOnes(00000101) returned 2
-# T= 4250, countOnes(00000110) returned 2
-# T= 4950, countOnes(00000111) returned 3
-# T= 5750, countOnes(00001000) returned 1
-# T= 6550, countOnes(00001001) returned 2
-# T= 7350, countOnes(00001010) returned 2
-# T= 8150, countOnes(00001011) returned 3
-# T= 8950, countOnes(00001100) returned 2
-# T= 9750, countOnes(00001101) returned 3
-# T= 10550, countOnes(00001110) returned 3
-# T= 11350, countOnes(00001111) returned 4
-# T= 12250, countOnes(00010000) returned 1
-# T= 13150, countOnes(00010001) returned 2
-# T= 14050, countOnes(00010010) returned 2
-# T= 14950, countOnes(00010011) returned 3
-# T= 15850, countOnes(00010100) returned 2
-# T= 16750, countOnes(00010101) returned 3
-# T= 17650, countOnes(00010110) returned 3
-# T= 18550, countOnes(00010111) returned 4
-# T= 19450, countOnes(00011000) returned 2
-# T= 20350, countOnes(00011001) returned 3
-# T= 21250, countOnes(00011010) returned 3
-# T= 22150, countOnes(00011011) returned 4
-# T= 23050, countOnes(00011100) returned 3
-# T= 23950, countOnes(00011101) returned 4
-# T= 24850, countOnes(00011110) returned 4
-# T= 25750, countOnes(00011111) returned 5
-# T= 26750, countOnes(00100000) returned 1
-# T= 27750, countOnes(00100001) returned 2
-# T= 28750, countOnes(00100010) returned 2
-# T= 29750, countOnes(00100011) returned 3
-# T= 30750, countOnes(00100100) returned 2
-# T= 31750, countOnes(00100101) returned 3
-# T= 32750, countOnes(00100110) returned 3
-# T= 33750, countOnes(00100111) returned 4
-# T= 34750, countOnes(00101000) returned 2
-# T= 35750, countOnes(00101001) returned 3
-# T= 36750, countOnes(00101010) returned 3
-# T= 37750, countOnes(00101011) returned 4
-# T= 38750, countOnes(00101100) returned 3
-# T= 39750, countOnes(00101101) returned 4
-# T= 40750, countOnes(00101110) returned 4
-# T= 41750, countOnes(00101111) returned 5
-# T= 42750, countOnes(00110000) returned 2
-# T= 43750, countOnes(00110001) returned 3
-# T= 44750, countOnes(00110010) returned 3
-# T= 45750, countOnes(00110011) returned 4
-# T= 46750, countOnes(00110100) returned 3
-# T= 47750, countOnes(00110101) returned 4
-# T= 48750, countOnes(00110110) returned 4
-# T= 49750, countOnes(00110111) returned 5
-# T= 50750, countOnes(00111000) returned 3
-# T= 51750, countOnes(00111001) returned 4
-# T= 52750, countOnes(00111010) returned 4
-# T= 53750, countOnes(00111011) returned 5
-# T= 54750, countOnes(00111100) returned 4
-# T= 55750, countOnes(00111101) returned 5
-# T= 56750, countOnes(00111110) returned 5
-# T= 57750, countOnes(00111111) returned 6
-# T= 58850, countOnes(01000000) returned 1
-# T= 59950, countOnes(01000001) returned 2
-# T= 61050, countOnes(01000010) returned 2
-# T= 62150, countOnes(01000011) returned 3
-# T= 63250, countOnes(01000100) returned 2
-# T= 64350, countOnes(01000101) returned 3
-# T= 65450, countOnes(01000110) returned 3
-# T= 66550, countOnes(01000111) returned 4
-# T= 67650, countOnes(01001000) returned 2
-# T= 68750, countOnes(01001001) returned 3
-# T= 69850, countOnes(01001010) returned 3
-# T= 70950, countOnes(01001011) returned 4
-# T= 72050, countOnes(01001100) returned 3
-# T= 73150, countOnes(01001101) returned 4
-# T= 74250, countOnes(01001110) returned 4
-# T= 75350, countOnes(01001111) returned 5
-# T= 76450, countOnes(01010000) returned 2
-# T= 77550, countOnes(01010001) returned 3
-# T= 78650, countOnes(01010010) returned 3
-# T= 79750, countOnes(01010011) returned 4
-# T= 80850, countOnes(01010100) returned 3
-# T= 81950, countOnes(01010101) returned 4
-# T= 83050, countOnes(01010110) returned 4
-# T= 84150, countOnes(01010111) returned 5
-# T= 85250, countOnes(01011000) returned 3
-# T= 86350, countOnes(01011001) returned 4
-# T= 87450, countOnes(01011010) returned 4
-# T= 88550, countOnes(01011011) returned 5
-# T= 89650, countOnes(01011100) returned 4
-# T= 90750, countOnes(01011101) returned 5
-# T= 91850, countOnes(01011110) returned 5
-# T= 92950, countOnes(01011111) returned 6
-# T= 94050, countOnes(01100000) returned 2
-# T= 95150, countOnes(01100001) returned 3
-# T= 96250, countOnes(01100010) returned 3
-# T= 97350, countOnes(01100011) returned 4
-# T= 98450, countOnes(01100100) returned 3
-# T= 99550, countOnes(01100101) returned 4
-# T= 100650, countOnes(01100110) returned 4
-# T= 101750, countOnes(01100111) returned 5
-# T= 102850, countOnes(01101000) returned 3
-# T= 103950, countOnes(01101001) returned 4
-# T= 105050, countOnes(01101010) returned 4
-# T= 106150, countOnes(01101011) returned 5
-# T= 107250, countOnes(01101100) returned 4
-# T= 108350, countOnes(01101101) returned 5
-# T= 109450, countOnes(01101110) returned 5
-# T= 110550, countOnes(01101111) returned 6
-# T= 111650, countOnes(01110000) returned 3
-# T= 112750, countOnes(01110001) returned 4
-# T= 113850, countOnes(01110010) returned 4
-# T= 114950, countOnes(01110011) returned 5
-# T= 116050, countOnes(01110100) returned 4
-# T= 117150, countOnes(01110101) returned 5
-# T= 118250, countOnes(01110110) returned 5
-# T= 119350, countOnes(01110111) returned 6
-# T= 120450, countOnes(01111000) returned 4
-# T= 121550, countOnes(01111001) returned 5
-# T= 122650, countOnes(01111010) returned 5
-# T= 123750, countOnes(01111011) returned 6
-# T= 124850, countOnes(01111100) returned 5
-# T= 125950, countOnes(01111101) returned 6
-# T= 127050, countOnes(01111110) returned 6
-# T= 128150, countOnes(01111111) returned 7
-# T= 129350, countOnes(10000000) returned 1
-# T= 130550, countOnes(10000001) returned 2
-# T= 131750, countOnes(10000010) returned 2
-# T= 132950, countOnes(10000011) returned 3
-# T= 134150, countOnes(10000100) returned 2
-# T= 135350, countOnes(10000101) returned 3
-# T= 136550, countOnes(10000110) returned 3
-# T= 137750, countOnes(10000111) returned 4
-# T= 138950, countOnes(10001000) returned 2
-# T= 140150, countOnes(10001001) returned 3
-# T= 141350, countOnes(10001010) returned 3
-# T= 142550, countOnes(10001011) returned 4
-# T= 143750, countOnes(10001100) returned 3
-# T= 144950, countOnes(10001101) returned 4
-# T= 146150, countOnes(10001110) returned 4
-# T= 147350, countOnes(10001111) returned 5
-# T= 148550, countOnes(10010000) returned 2
-# T= 149750, countOnes(10010001) returned 3
-# T= 150950, countOnes(10010010) returned 3
-# T= 152150, countOnes(10010011) returned 4
-# T= 153350, countOnes(10010100) returned 3
-# T= 154550, countOnes(10010101) returned 4
-# T= 155750, countOnes(10010110) returned 4
-# T= 156950, countOnes(10010111) returned 5
-# T= 158150, countOnes(10011000) returned 3
-# T= 159350, countOnes(10011001) returned 4
-# T= 160550, countOnes(10011010) returned 4
-# T= 161750, countOnes(10011011) returned 5
-# T= 162950, countOnes(10011100) returned 4
-# T= 164150, countOnes(10011101) returned 5
-# T= 165350, countOnes(10011110) returned 5
-# T= 166550, countOnes(10011111) returned 6
-# T= 167750, countOnes(10100000) returned 2
-# T= 168950, countOnes(10100001) returned 3
-# T= 170150, countOnes(10100010) returned 3
-# T= 171350, countOnes(10100011) returned 4
-# T= 172550, countOnes(10100100) returned 3
-# T= 173750, countOnes(10100101) returned 4
-# T= 174950, countOnes(10100110) returned 4
-# T= 176150, countOnes(10100111) returned 5
-# T= 177350, countOnes(10101000) returned 3
-# T= 178550, countOnes(10101001) returned 4
-# T= 179750, countOnes(10101010) returned 4
-# T= 180950, countOnes(10101011) returned 5
-# T= 182150, countOnes(10101100) returned 4
-# T= 183350, countOnes(10101101) returned 5
-# T= 184550, countOnes(10101110) returned 5
-# T= 185750, countOnes(10101111) returned 6
-# T= 186950, countOnes(10110000) returned 3
-# T= 188150, countOnes(10110001) returned 4
-# T= 189350, countOnes(10110010) returned 4
-# T= 190550, countOnes(10110011) returned 5
-# T= 191750, countOnes(10110100) returned 4
-# T= 192950, countOnes(10110101) returned 5
-# T= 194150, countOnes(10110110) returned 5
-# T= 195350, countOnes(10110111) returned 6
-# T= 196550, countOnes(10111000) returned 4
-# T= 197750, countOnes(10111001) returned 5
-# T= 198950, countOnes(10111010) returned 5
-# T= 200150, countOnes(10111011) returned 6
-# T= 201350, countOnes(10111100) returned 5
-# T= 202550, countOnes(10111101) returned 6
-# T= 203750, countOnes(10111110) returned 6
-# T= 204950, countOnes(10111111) returned 7
-# T= 206150, countOnes(11000000) returned 2
-# T= 207350, countOnes(11000001) returned 3
-# T= 208550, countOnes(11000010) returned 3
-# T= 209750, countOnes(11000011) returned 4
-# T= 210950, countOnes(11000100) returned 3
-# T= 212150, countOnes(11000101) returned 4
-# T= 213350, countOnes(11000110) returned 4
-# T= 214550, countOnes(11000111) returned 5
-# T= 215750, countOnes(11001000) returned 3
-# T= 216950, countOnes(11001001) returned 4
-# T= 218150, countOnes(11001010) returned 4
-# T= 219350, countOnes(11001011) returned 5
-# T= 220550, countOnes(11001100) returned 4
-# T= 221750, countOnes(11001101) returned 5
-# T= 222950, countOnes(11001110) returned 5
-# T= 224150, countOnes(11001111) returned 6
-# T= 225350, countOnes(11010000) returned 3
-# T= 226550, countOnes(11010001) returned 4
-# T= 227750, countOnes(11010010) returned 4
-# T= 228950, countOnes(11010011) returned 5
-# T= 230150, countOnes(11010100) returned 4
-# T= 231350, countOnes(11010101) returned 5
-# T= 232550, countOnes(11010110) returned 5
-# T= 233750, countOnes(11010111) returned 6
-# T= 234950, countOnes(11011000) returned 4
-# T= 236150, countOnes(11011001) returned 5
-# T= 237350, countOnes(11011010) returned 5
-# T= 238550, countOnes(11011011) returned 6
-# T= 239750, countOnes(11011100) returned 5
-# T= 240950, countOnes(11011101) returned 6
-# T= 242150, countOnes(11011110) returned 6
-# T= 243350, countOnes(11011111) returned 7
-# T= 244550, countOnes(11100000) returned 3
-# T= 245750, countOnes(11100001) returned 4
-# T= 246950, countOnes(11100010) returned 4
-# T= 248150, countOnes(11100011) returned 5
-# T= 249350, countOnes(11100100) returned 4
-# T= 250550, countOnes(11100101) returned 5
-# T= 251750, countOnes(11100110) returned 5
-# T= 252950, countOnes(11100111) returned 6
-# T= 254150, countOnes(11101000) returned 4
-# T= 255350, countOnes(11101001) returned 5
-# T= 256550, countOnes(11101010) returned 5
-# T= 257750, countOnes(11101011) returned 6
-# T= 258950, countOnes(11101100) returned 5
-# T= 260150, countOnes(11101101) returned 6
-# T= 261350, countOnes(11101110) returned 6
-# T= 262550, countOnes(11101111) returned 7
-# T= 263750, countOnes(11110000) returned 4
-# T= 264950, countOnes(11110001) returned 5
-# T= 266150, countOnes(11110010) returned 5
-# T= 267350, countOnes(11110011) returned 6
-# T= 268550, countOnes(11110100) returned 5
-# T= 269750, countOnes(11110101) returned 6
-# T= 270950, countOnes(11110110) returned 6
-# T= 272150, countOnes(11110111) returned 7
-# T= 273350, countOnes(11111000) returned 5
-# T= 274550, countOnes(11111001) returned 6
-# T= 275750, countOnes(11111010) returned 6
-# T= 276950, countOnes(11111011) returned 7
-# T= 278150, countOnes(11111100) returned 6
-# T= 279350, countOnes(11111101) returned 7
-# T= 280550, countOnes(11111110) returned 7
-# T= 281750, countOnes(11111111) returned 8
-# ** Note: $stop    : ./bitCounter_tb.sv(33)
-#    Time: 281950 ps  Iteration: 1  Instance: /bitCounter_tb
-# Break in Module bitCounter_tb at ./bitCounter_tb.sv line 33
-# End time: 18:44:53 on May 07,2026, Elapsed time: 2:47:03
-# Errors: 0, Warnings: 2
+# T= 2850, value looking for (00000000) value found: 0 @ 0000
+add wave -position end  sim:/binarySearch_tb/dut/d_init/val_found
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:20 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 12:33:20 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:20 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 12:33:20 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:20 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 12:33:20 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:20 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 12:33:20 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:20 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:33:21 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:21 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 12:33:21 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:21 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 12:33:21 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:21 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 12:33:21 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:21 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 12:33:21 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:21 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 12:33:21 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:21 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 12:33:21 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:33:23 on May 08,2026, Elapsed time: 0:06:40
+# Errors: 0, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 12:33:23 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftb42b4d".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb42b4d
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2850, value looking for (00000000) value found: 0 @ 0000
+add wave -position end  sim:/binarySearch_tb/dut/d_init/val_found
+restart
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+run -all
+# T= 2850, value looking for (00000000) value found: 0 @ 0000
+add wave -position end  sim:/binarySearch_tb/dut/c_unit/ns
+add wave -position end  sim:/binarySearch_tb/dut/c_unit/ps
+restart
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+run -all
+# T= 2850, value looking for (00000000) value found: 0 @ 0000
+restart
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:08 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 12:39:08 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:09 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 12:39:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:09 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 12:39:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:09 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 12:39:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:09 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:39:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:09 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 12:39:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:09 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 12:39:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:09 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 12:39:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:09 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 12:39:09 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:09 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 12:39:10 on May 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:10 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 12:39:10 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:39:12 on May 08,2026, Elapsed time: 0:05:49
+# Errors: 0, Warnings: 14
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 12:39:12 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftkkcedy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkkcedy
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2750, value looking for (00000000) value found: 0 @ 0000
+add wave -position end  sim:/binarySearch_tb/dut/c_unit/ns
+add wave -position end  sim:/binarySearch_tb/dut/c_unit/ps
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/task2_ave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware/task2_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:22 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_controller.sv 
+# -- Compiling module bitCounter_controller
+# 
+# Top level modules:
+# 	bitCounter_controller
+# End time: 12:40:22 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:22 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_datapath.sv 
+# -- Compiling module bitCounter_datapath
+# 
+# Top level modules:
+# 	bitCounter_datapath
+# End time: 12:40:22 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:22 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter.sv 
+# -- Compiling module bitCounter
+# 
+# Top level modules:
+# 	bitCounter
+# End time: 12:40:22 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:22 on May 08,2026
+# vlog -reportprogress 300 ./bitCounter_tb.sv 
+# -- Compiling module bitCounter_tb
+# 
+# Top level modules:
+# 	bitCounter_tb
+# End time: 12:40:22 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:22 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:40:22 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:22 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_controller.sv 
+# -- Compiling module binarySearch_controller
+# 
+# Top level modules:
+# 	binarySearch_controller
+# End time: 12:40:22 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:22 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_datapath.sv 
+# -- Compiling module binarySearch_datapath
+# 
+# Top level modules:
+# 	binarySearch_datapath
+# End time: 12:40:22 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:23 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch.sv 
+# -- Compiling module binarySearch
+# 
+# Top level modules:
+# 	binarySearch
+# End time: 12:40:23 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:23 on May 08,2026
+# vlog -reportprogress 300 ./binarySearch_tb.sv 
+# -- Compiling module binarySearch_tb
+# 
+# Top level modules:
+# 	binarySearch_tb
+# End time: 12:40:23 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:23 on May 08,2026
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# End time: 12:40:23 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:23 on May 08,2026
+# vlog -reportprogress 300 ./ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 12:40:23 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:40:25 on May 08,2026, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarySearch_tb -Lf altera_mf_ver 
+# Start time: 12:40:25 on May 08,2026
+# Loading sv_std.std
+# Loading work.binarySearch_tb
+# Loading work.binarySearch
+# Loading work.ram32x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.binarySearch_controller
+# Loading work.binarySearch_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: becca  Hostname: WINSTON  ProcessID: 1712
+#           Attempting to use alternate WLF file "./wlftdjwkhj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdjwkhj
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# T= 2750, value looking for (00000000) value found: 0 @ 0000
+add wave -position end  sim:/binarySearch_tb/dut/d_init/val_found
+restart
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+run -all
+# T= 2750, value looking for (00000000) value found: 0 @ 0000
+add wave -position end  sim:/binarySearch_tb/dut/mem_data
+restart
+# ** Warning: (vsim-3017) ./binarySearch.sv(28): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /binarySearch_tb/dut/dataSet File: ./ram32x8.v
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'data'.
+# ** Warning: (vsim-3722) ./binarySearch.sv(28): [TFMPC] - Missing connection for port 'wren'.
+run -all
+# T= 2750, value looking for (00000000) value found: 0 @ 0000

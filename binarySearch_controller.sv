@@ -25,7 +25,7 @@ module binarySearch_controller (
  
   always_comb begin
 	   case (ps)
-			 IDLE: ns = s ? COMPARE : IDLE; 
+			 IDLE: ns = s ? INIT : IDLE; 
 			 INIT: ns = WAIT;
 			 WAIT: ns = COMPARE;
 			 COMPARE: begin 
