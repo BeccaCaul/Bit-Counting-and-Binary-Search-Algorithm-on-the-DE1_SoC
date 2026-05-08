@@ -8,39 +8,159 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/becca/Documents/ee271/lab1
-vfifo
+vbitCounter
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1777062937
+Z2 !s110 1778194669
 !i10b 1
-!s100 39m@Co2WmaIj]DPDRi_G=0
-IdJ?4fZzGol8[OWX96D]662
+!s100 GGQJA?]ZDST?<B0LLF5>R0
+IXG_2;2I2W6AO=Lm3]Q<Fk3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 fifo_sv_unit
+!s105 bitCounter_sv_unit
 S1
-Z4 dC:/Users/becca/labs/hw3
-w1776983075
-8./fifo.sv
-F./fifo.sv
-L0 8
+Z4 dC:/Users/becca/Documents/GitHub/371_lab-4---Implementing-Algorithms-in-Hardware
+w1778194347
+8./bitCounter.sv
+F./bitCounter.sv
+L0 2
 Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1777062937.000000
+Z6 !s108 1778194669.000000
+!s107 ./bitCounter.sv|
+!s90 -reportprogress|300|./bitCounter.sv|
+!i113 1
+Z7 tCvgOpt 0
+nbit@counter
+vbitCounter_controller
+R1
+R2
+!i10b 1
+!s100 bMgF;=2_BmzNQVLIBaD0d0
+I>db:o?`4lSQXm`;R7G@Eb0
+R3
+!s105 bitCounter_controller_sv_unit
+S1
+R4
+w1778194331
+8./bitCounter_controller.sv
+F./bitCounter_controller.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./bitCounter_controller.sv|
+!s90 -reportprogress|300|./bitCounter_controller.sv|
+!i113 1
+R7
+nbit@counter_controller
+vbitCounter_datapath
+R1
+R2
+!i10b 1
+!s100 JXPe^@>bQXV5B62:OPh_o1
+I9:T9nd__AgPE`bg[mSB:[3
+R3
+!s105 bitCounter_datapath_sv_unit
+S1
+R4
+w1778193459
+8./bitCounter_datapath.sv
+F./bitCounter_datapath.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./bitCounter_datapath.sv|
+!s90 -reportprogress|300|./bitCounter_datapath.sv|
+!i113 1
+R7
+nbit@counter_datapath
+vbitCounter_tb
+R1
+R2
+!i10b 1
+!s100 4P;UKj:ae;[Hnn_d42HRK2
+IomiZSiY[lh6`Kz809k3j51
+R3
+!s105 bitCounter_tb_sv_unit
+S1
+R4
+w1778194197
+8./bitCounter_tb.sv
+F./bitCounter_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./bitCounter_tb.sv|
+!s90 -reportprogress|300|./bitCounter_tb.sv|
+!i113 1
+R7
+nbit@counter_tb
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 c3e?[cl<2[6O:FMNB5VFd2
+ImKaG4CzoAEU`Y]7ZPcWPf1
+R3
+!s105 DE1_SoC_sv_unit
+S1
+R4
+w1778192671
+8./DE1_SoC.sv
+F./DE1_SoC.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./DE1_SoC.sv|
+!s90 -reportprogress|300|./DE1_SoC.sv|
+!i113 1
+R7
+n@d@e1_@so@c
+vfifo
+R1
+Z8 !s110 1777062937
+!i10b 1
+!s100 39m@Co2WmaIj]DPDRi_G=0
+IdJ?4fZzGol8[OWX96D]662
+R3
+!s105 fifo_sv_unit
+S1
+Z9 dC:/Users/becca/labs/hw3
+w1776983075
+8./fifo.sv
+F./fifo.sv
+L0 8
+R5
+r1
+!s85 0
+31
+Z10 !s108 1777062937.000000
 !s107 ./fifo.sv|
 !s90 -reportprogress|300|./fifo.sv|
 !i113 1
-Z7 tCvgOpt 0
+R7
 vfifo_ctrl
 R1
-R2
+R8
 !i10b 1
 !s100 6WZP22Kn8We>l12Pj;9c>0
 IY3Nf30j37a4WfPM5iSnXQ2
 R3
 !s105 fifo_ctrl_sv_unit
 S1
-R4
+R9
 w1776982706
 8./fifo_ctrl.sv
 F./fifo_ctrl.sv
@@ -49,21 +169,21 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 ./fifo_ctrl.sv|
 !s90 -reportprogress|300|./fifo_ctrl.sv|
 !i113 1
 R7
 vfifo_tb
 R1
-R2
+R8
 !i10b 1
 !s100 oGgkb44M73EZXW53=z]I73
 IZZ:g:dhX[ZGb6g2cK:^2H1
 R3
 !s105 fifo_tb_sv_unit
 S1
-R4
+R9
 w1776985255
 8./fifo_tb.sv
 F./fifo_tb.sv
@@ -72,7 +192,7 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 ./fifo_tb.sv|
 !s90 -reportprogress|300|./fifo_tb.sv|
 !i113 1
@@ -86,7 +206,7 @@ Ig1RIPT98JTgiabK6CPLT>3
 R3
 !s105 hw1p1_sv_unit
 S1
-Z8 dC:/Users/becca/labs/hw1
+Z11 dC:/Users/becca/labs/hw1
 w1775245882
 8./hw1p1.sv
 F./hw1p1.sv
@@ -95,7 +215,7 @@ R5
 r1
 !s85 0
 31
-Z9 !s108 1775246230.000000
+Z12 !s108 1775246230.000000
 !s107 ./hw1p1.sv|
 !s90 -reportprogress|300|./hw1p1.sv|
 !i113 1
@@ -109,7 +229,7 @@ IzVGE4hCoVeidS5haAE9_U2
 R3
 !s105 hw1p1_tb_sv_unit
 S1
-R8
+R11
 w1775242804
 8./hw1p1_tb.sv
 F./hw1p1_tb.sv
@@ -118,21 +238,21 @@ R5
 r1
 !s85 0
 31
-R9
+R12
 !s107 ./hw1p1_tb.sv|
 !s90 -reportprogress|300|./hw1p1_tb.sv|
 !i113 1
 R7
 vhw1p2
 R1
-Z10 !s110 1775509450
+Z13 !s110 1775509450
 !i10b 1
 !s100 =6zl3^;6X51DC@K;UE4zK0
 IQnCG`SoUW7_OAeO34IQRc3
 R3
 !s105 hw1p2_sv_unit
 S1
-R8
+R11
 w1775509207
 8./hw1p2.sv
 F./hw1p2.sv
@@ -141,21 +261,21 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1775509450.000000
+Z14 !s108 1775509450.000000
 !s107 ./hw1p2.sv|
 !s90 -reportprogress|300|./hw1p2.sv|
 !i113 1
 R7
 vhw1p2_tb
 R1
-R10
+R13
 !i10b 1
 !s100 1jb3Jooljn:bL<LARoVUz1
 IPz:i`a[Hk;6@QWg]4=;8k1
 R3
 !s105 hw1p2_tb_sv_unit
 S1
-R8
+R11
 w1775509445
 8./hw1p2_tb.sv
 F./hw1p2_tb.sv
@@ -164,21 +284,21 @@ R5
 r1
 !s85 0
 31
-R11
+R14
 !s107 ./hw1p2_tb.sv|
 !s90 -reportprogress|300|./hw1p2_tb.sv|
 !i113 1
 R7
 vhw3p3
 R1
-Z12 !s110 1777062938
+Z15 !s110 1777062938
 !i10b 1
 !s100 m;H[Z3T[jH^kNgG[kX]4e0
 IPO`L3T=b6DaQPZaT^C^HF3
 R3
 !s105 hw3p3_sv_unit
 S1
-R4
+R9
 w1777062237
 8./hw3p3.sv
 F./hw3p3.sv
@@ -187,21 +307,21 @@ R5
 r1
 !s85 0
 31
-Z13 !s108 1777062938.000000
+Z16 !s108 1777062938.000000
 !s107 ./hw3p3.sv|
 !s90 -reportprogress|300|./hw3p3.sv|
 !i113 1
 R7
 vhw3p3_tb
 R1
-R12
+R15
 !i10b 1
 !s100 UMB]8?nV:bR3Vnk`4m9k20
 IcEJ7]i52M9]IYmYN<g]C92
 R3
 !s105 hw3p3_tb_sv_unit
 S1
-R4
+R9
 w1777062934
 8./hw3p3_tb.sv
 F./hw3p3_tb.sv
@@ -210,67 +330,67 @@ R5
 r1
 !s85 0
 31
-R13
+R16
 !s107 ./hw3p3_tb.sv|
 !s90 -reportprogress|300|./hw3p3_tb.sv|
 !i113 1
 R7
 vmux2_1
 R1
-Z14 !s110 1759117894
+Z17 !s110 1759117894
 !i10b 1
 !s100 D8f^KdU48cL4Rb1`ZGVGU1
 I=Tj5VT>:3DVMWDcLmbI072
 R3
-Z15 !s105 mux2_1_sv_unit
+Z18 !s105 mux2_1_sv_unit
 S1
 R0
-Z16 w1758929031
-Z17 8./mux2_1.sv
-Z18 F./mux2_1.sv
+Z19 w1758929031
+Z20 8./mux2_1.sv
+Z21 F./mux2_1.sv
 L0 1
 R5
 r1
 !s85 0
 31
-Z19 !s108 1759117894.000000
-Z20 !s107 ./mux2_1.sv|
-Z21 !s90 -reportprogress|300|./mux2_1.sv|
+Z22 !s108 1759117894.000000
+Z23 !s107 ./mux2_1.sv|
+Z24 !s90 -reportprogress|300|./mux2_1.sv|
 !i113 1
 R7
 vmux2_1_testbench
 R1
-R14
+R17
 !i10b 1
 !s100 EeNico6<P[jTe`F1YN=S[2
 IzM:o^oQN=@zgBm7oTaRXC2
 R3
-R15
+R18
 S1
 R0
-R16
-R17
-R18
+R19
+R20
+R21
 L0 7
 R5
 r1
 !s85 0
 31
-R19
-R20
-R21
+R22
+R23
+R24
 !i113 1
 R7
 vreg_file
 R1
-R2
+R8
 !i10b 1
 !s100 o1ElXh@PYmb8=_Qj9a<:@1
 I9d8E3QM5;>CB;h7cfom__0
 R3
 !s105 reg_file_sv_unit
 S1
-R4
+R9
 w1776981906
 8./reg_file.sv
 F./reg_file.sv
@@ -279,21 +399,21 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 ./reg_file.sv|
 !s90 -reportprogress|300|./reg_file.sv|
 !i113 1
 R7
 vsign_mag_add
 R1
-Z22 !s110 1776059092
+Z25 !s110 1776059092
 !i10b 1
 !s100 ^RW7j==Smn0ail;==oScm1
 IQh6877O`;aRc`8Yli2HgI3
 R3
 !s105 sign_mag_add_sv_unit
 S1
-Z23 dC:/Users/becca/labs/hw2
+Z26 dC:/Users/becca/labs/hw2
 w1776052877
 8./sign_mag_add.sv
 F./sign_mag_add.sv
@@ -302,21 +422,21 @@ R5
 r1
 !s85 0
 31
-Z24 !s108 1776059092.000000
+Z27 !s108 1776059092.000000
 !s107 ./sign_mag_add.sv|
 !s90 -reportprogress|300|./sign_mag_add.sv|
 !i113 1
 R7
 vsign_mag_add_tb
 R1
-R22
+R25
 !i10b 1
 !s100 LTK_K6n6>?NBDJ<U]eAhe3
 INdSENPoHE16NN27Y034_12
 R3
 !s105 sign_mag_add_tb_sv_unit
 S1
-R23
+R26
 w1776059087
 8./sign_mag_add_tb.sv
 F./sign_mag_add_tb.sv
@@ -325,21 +445,21 @@ R5
 r1
 !s85 0
 31
-R24
+R27
 !s107 ./sign_mag_add_tb.sv|
 !s90 -reportprogress|300|./sign_mag_add_tb.sv|
 !i113 1
 R7
 vsync_rom
 R1
-R22
+R25
 !i10b 1
 !s100 h_S>P78oZo]U>`jocn64f1
 I0JX@UBHS>2@27[hTaof1<1
 R3
 !s105 sync_rom_sv_unit
 S1
-R23
+R26
 w1776058768
 8./sync_rom.sv
 F./sync_rom.sv
@@ -348,7 +468,7 @@ R5
 r1
 !s85 0
 31
-R24
+R27
 !s107 ./sync_rom.sv|
 !s90 -reportprogress|300|./sync_rom.sv|
 !i113 1

@@ -1,0 +1,19 @@
+module bitCounter_tb ();
+  	parameter W = 8;
+	logic s, reset, clk;
+   logic done;
+   logic [W-1:0] A;
+   logic [W-1:0] result;
+
+  //instantiate task 1 as dut
+  t1 #(W) dut(.*);
+  
+  // simulated clock
+	 parameter period = 100;
+	 initial begin
+		clk <= 0;
+		forever
+			#(period/2)
+			clk <= ~clk;
+	end // initial clock
+endmodule

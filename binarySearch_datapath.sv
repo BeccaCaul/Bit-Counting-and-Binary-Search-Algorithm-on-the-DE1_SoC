@@ -1,0 +1,40 @@
+//this is the datapath for the binary search algorithm. it takes in control signals
+//				from the controller and updates staus signals accordingly
+
+
+//TODO:entire module lowkey
+module binarySearch_datapath #(parameter W = 8)(clk, reset,  shiftA, loadA, incr_result, 
+															clr_result, A, A_eq_0, a0, result);
+	
+	//Status signals: low_gteq_high, curr_lt_mid, curr_gt_mid, val_found
+	//Control signals: set_Loc, clr_found, clr_Loc, set_mid, update_high, update_low
+
+	// port definitions
+	input logic clk, reset;
+	input logic set_Loc, clr_found, clr_Loc, set_mid, update_high, update_low;
+	input logic [W-1:0] A;
+	output logic [W-1:0]  Loc;
+	output logic done, found;
+	
+	logic [W-1:0] A1;
+	
+	// datapath logic
+	always_ff @(posedge clk) begin
+		if (loadA) begin
+			A1 <= A;
+		end
+		if (clr_result) begin
+			result <= 8'h00;
+		end
+		if (incr_result) begin
+			result <= result + 1;
+		end
+		if (shiftA) A1 <= A1 >> 1;
+	end //always_ff
+	
+	//assign ouputs
+	assign A_eq_0 = (A1 == 0);
+	assign a0 = A1[0];
+
+
+endmodule 
