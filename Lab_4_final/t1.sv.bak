@@ -1,0 +1,20 @@
+/*Top-level module for Bit-Counting algorithm
+// which counts the number of 1s in a given input A
+*/
+module t1 (input logic s, reset, clk,
+			  output logic done,
+			  input logic [7:0] A,
+			  output logic [7:0] result);
+			  
+			  
+	//define status and control signals
+	logic shiftA, loadA,incr_result, clr_result;
+	logic A_eq_0, a0;
+	
+	
+   //instantiate control and datapath
+	t1_controller t1_c (.*);
+	t1_datapath t1_d (.*);
+	
+	
+endmodule //t1

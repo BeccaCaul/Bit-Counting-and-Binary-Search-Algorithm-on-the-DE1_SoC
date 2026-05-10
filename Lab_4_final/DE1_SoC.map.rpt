@@ -1,0 +1,698 @@
+Analysis & Synthesis report for DE1_SoC
+Sat May 09 12:23:13 2026
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. State Machine - |DE1_SoC|binarySearch:task2|binarySearch_controller:c_unit|ps
+ 11. State Machine - |DE1_SoC|bitCounter:task1|bitCounter_controller:c_unit|ps
+ 12. Registers Removed During Synthesis
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component|altsyncram_3gq1:auto_generated
+ 17. Parameter Settings for User Entity Instance: Top-level Entity: |DE1_SoC
+ 18. Parameter Settings for User Entity Instance: bitCounter:task1
+ 19. Parameter Settings for User Entity Instance: bitCounter:task1|bitCounter_datapath:d_init
+ 20. Parameter Settings for User Entity Instance: binarySearch:task2
+ 21. Parameter Settings for User Entity Instance: binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component
+ 22. Parameter Settings for User Entity Instance: binarySearch:task2|binarySearch_datapath:d_init
+ 23. altsyncram Parameter Settings by Entity Instance
+ 24. Port Connectivity Checks: "binarySearch:task2|ram32x8:dataSet"
+ 25. Port Connectivity Checks: "bitCounter:task1"
+ 26. Port Connectivity Checks: "seg7:disp1"
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
+ 30. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat May 09 12:23:13 2026       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE1_SoC                                     ;
+; Top-level Entity Name           ; DE1_SoC                                     ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 48                                          ;
+; Total pins                      ; 39                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 256                                         ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; DE1_SoC            ; DE1_SoC            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; ram32x8.v                        ; yes             ; User Wizard-Generated File             ; C:/Users/stlp/Documents/Lab_4_final/ram32x8.v                                ;         ;
+; bitCounter_datapath.sv           ; yes             ; User SystemVerilog HDL File            ; C:/Users/stlp/Documents/Lab_4_final/bitCounter_datapath.sv                   ;         ;
+; bitCounter_controller.sv         ; yes             ; User SystemVerilog HDL File            ; C:/Users/stlp/Documents/Lab_4_final/bitCounter_controller.sv                 ;         ;
+; bitCounter.sv                    ; yes             ; User SystemVerilog HDL File            ; C:/Users/stlp/Documents/Lab_4_final/bitCounter.sv                            ;         ;
+; binarySearch_datapath.sv         ; yes             ; User SystemVerilog HDL File            ; C:/Users/stlp/Documents/Lab_4_final/binarySearch_datapath.sv                 ;         ;
+; binarySearch_controller.sv       ; yes             ; User SystemVerilog HDL File            ; C:/Users/stlp/Documents/Lab_4_final/binarySearch_controller.sv               ;         ;
+; binarySearch.sv                  ; yes             ; User SystemVerilog HDL File            ; C:/Users/stlp/Documents/Lab_4_final/binarySearch.sv                          ;         ;
+; D_FF.sv                          ; yes             ; User SystemVerilog HDL File            ; C:/Users/stlp/Documents/Lab_4_final/D_FF.sv                                  ;         ;
+; seg7.sv                          ; yes             ; User SystemVerilog HDL File            ; C:/Users/stlp/Documents/Lab_4_final/seg7.sv                                  ;         ;
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File            ; C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv                               ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal170.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_3gq1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/stlp/Documents/Lab_4_final/db/altsyncram_3gq1.tdf                   ;         ;
+; my_array.mif                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/stlp/Documents/Lab_4_final/my_array.mif                             ;         ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 55             ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 91             ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 12             ;
+;     -- 5 input functions                    ; 7              ;
+;     -- 4 input functions                    ; 27             ;
+;     -- <=3 input functions                  ; 45             ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 48             ;
+;                                             ;                ;
+; I/O pins                                    ; 39             ;
+; Total MLAB memory bits                      ; 0              ;
+; Total block memory bits                     ; 256            ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 56             ;
+; Total fan-out                               ; 602            ;
+; Average fan-out                             ; 2.68           ;
++---------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                        ; Entity Name             ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+; |DE1_SoC                                     ; 91 (8)              ; 48 (0)                    ; 256               ; 0          ; 39   ; 0            ; |DE1_SoC                                                                                                   ; DE1_SoC                 ; work         ;
+;    |D_FF:key0_sync|                          ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|D_FF:key0_sync                                                                                    ; D_FF                    ; work         ;
+;    |D_FF:key3_sync|                          ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|D_FF:key3_sync                                                                                    ; D_FF                    ; work         ;
+;    |binarySearch:task2|                      ; 53 (0)              ; 28 (0)                    ; 256               ; 0          ; 0    ; 0            ; |DE1_SoC|binarySearch:task2                                                                                ; binarySearch            ; work         ;
+;       |binarySearch_controller:c_unit|       ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|binarySearch:task2|binarySearch_controller:c_unit                                                 ; binarySearch_controller ; work         ;
+;       |binarySearch_datapath:d_init|         ; 45 (45)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|binarySearch:task2|binarySearch_datapath:d_init                                                   ; binarySearch_datapath   ; work         ;
+;       |ram32x8:dataSet|                      ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |DE1_SoC|binarySearch:task2|ram32x8:dataSet                                                                ; ram32x8                 ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |DE1_SoC|binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component                                ; altsyncram              ; work         ;
+;             |altsyncram_3gq1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |DE1_SoC|binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component|altsyncram_3gq1:auto_generated ; altsyncram_3gq1         ; work         ;
+;    |bitCounter:task1|                        ; 21 (0)              ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|bitCounter:task1                                                                                  ; bitCounter              ; work         ;
+;       |bitCounter_controller:c_unit|         ; 4 (4)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|bitCounter:task1|bitCounter_controller:c_unit                                                     ; bitCounter_controller   ; work         ;
+;       |bitCounter_datapath:d_init|           ; 17 (17)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|bitCounter:task1|bitCounter_datapath:d_init                                                       ; bitCounter_datapath     ; work         ;
+;    |seg7:disp0|                              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|seg7:disp0                                                                                        ; seg7                    ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                          ;
++--------------------------------------------------------------------------------------------------------------+------------+-------------+--------------+--------------+--------------+--------------+------+--------------+
+; Name                                                                                                         ; Type       ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF          ;
++--------------------------------------------------------------------------------------------------------------+------------+-------------+--------------+--------------+--------------+--------------+------+--------------+
+; binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component|altsyncram_3gq1:auto_generated|ALTSYNCRAM ; M10K block ; Single Port ; 32           ; 8            ; --           ; --           ; 256  ; my_array.mif ;
++--------------------------------------------------------------------------------------------------------------+------------+-------------+--------------+--------------+--------------+--------------+------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                         ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                             ; IP Include File ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+; Altera ; RAM: 1-PORT  ; 24.1    ; N/A          ; N/A          ; |DE1_SoC|binarySearch:task2|ram32x8:dataSet ; ram32x8.v       ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------+
+; State Machine - |DE1_SoC|binarySearch:task2|binarySearch_controller:c_unit|ps                           ;
++-------------+-------------+----------+-----------+-----------+------------+---------+---------+---------+
+; Name        ; ps.NOTFOUND ; ps.FOUND ; ps.UPDATE ; ps.REGMEM ; ps.COMPARE ; ps.WAIT ; ps.INIT ; ps.IDLE ;
++-------------+-------------+----------+-----------+-----------+------------+---------+---------+---------+
+; ps.IDLE     ; 0           ; 0        ; 0         ; 0         ; 0          ; 0       ; 0       ; 0       ;
+; ps.INIT     ; 0           ; 0        ; 0         ; 0         ; 0          ; 0       ; 1       ; 1       ;
+; ps.WAIT     ; 0           ; 0        ; 0         ; 0         ; 0          ; 1       ; 0       ; 1       ;
+; ps.COMPARE  ; 0           ; 0        ; 0         ; 0         ; 1          ; 0       ; 0       ; 1       ;
+; ps.REGMEM   ; 0           ; 0        ; 0         ; 1         ; 0          ; 0       ; 0       ; 1       ;
+; ps.UPDATE   ; 0           ; 0        ; 1         ; 0         ; 0          ; 0       ; 0       ; 1       ;
+; ps.FOUND    ; 0           ; 1        ; 0         ; 0         ; 0          ; 0       ; 0       ; 1       ;
+; ps.NOTFOUND ; 1           ; 0        ; 0         ; 0         ; 0          ; 0       ; 0       ; 1       ;
++-------------+-------------+----------+-----------+-----------+------------+---------+---------+---------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------+
+; State Machine - |DE1_SoC|bitCounter:task1|bitCounter_controller:c_unit|ps ;
++-------+-------+-------+---------------------------------------------------+
+; Name  ; ps.S1 ; ps.S3 ; ps.S2                                             ;
++-------+-------+-------+---------------------------------------------------+
+; ps.S1 ; 0     ; 0     ; 0                                                 ;
+; ps.S2 ; 1     ; 0     ; 1                                                 ;
+; ps.S3 ; 1     ; 1     ; 0                                                 ;
++-------+-------+-------+---------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                            ;
++----------------------------------------------------------+--------------------+
+; Register name                                            ; Reason for Removal ;
++----------------------------------------------------------+--------------------+
+; binarySearch:task2|binarySearch_controller:c_unit|ps~2   ; Lost fanout        ;
+; binarySearch:task2|binarySearch_controller:c_unit|ps~3   ; Lost fanout        ;
+; binarySearch:task2|binarySearch_controller:c_unit|ps~4   ; Lost fanout        ;
+; binarySearch:task2|binarySearch_controller:c_unit|ps~5   ; Lost fanout        ;
+; bitCounter:task1|bitCounter_datapath:d_init|result[5..7] ; Lost fanout        ;
+; Total Number of Removed Registers = 7                    ;                    ;
++----------------------------------------------------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                         ;
++-------------------------------------------------------+--------------------+--------------------------------------------------------+
+; Register name                                         ; Reason for Removal ; Registers Removed due to This Register                 ;
++-------------------------------------------------------+--------------------+--------------------------------------------------------+
+; bitCounter:task1|bitCounter_datapath:d_init|result[7] ; Lost Fanouts       ; bitCounter:task1|bitCounter_datapath:d_init|result[6], ;
+;                                                       ;                    ; bitCounter:task1|bitCounter_datapath:d_init|result[5]  ;
++-------------------------------------------------------+--------------------+--------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 48    ;
+; Number of registers using Synchronous Clear  ; 9     ;
+; Number of registers using Synchronous Load   ; 20    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |DE1_SoC|bitCounter:task1|bitCounter_datapath:d_init|result[0]   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |DE1_SoC|bitCounter:task1|bitCounter_datapath:d_init|A1[1]       ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC|binarySearch:task2|binarySearch_datapath:d_init|Loc[3]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC|binarySearch:task2|binarySearch_datapath:d_init|low[1]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC|binarySearch:task2|binarySearch_datapath:d_init|high[0] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC|binarySearch:task2|binarySearch_datapath:d_init|mid[3]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|binarySearch:task2|binarySearch_controller:c_unit|ps    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component|altsyncram_3gq1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                         ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                          ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |DE1_SoC ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; W              ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitCounter:task1 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; W              ; 8     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitCounter:task1|bitCounter_datapath:d_init ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; W              ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binarySearch:task2 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; W              ; 8     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                ;
++------------------------------------+----------------------+-----------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                             ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                        ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                             ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                             ;
+; WIDTH_A                            ; 8                    ; Signed Integer                                      ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                                      ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                                      ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                             ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                             ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                             ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                             ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                             ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                             ;
+; WIDTH_B                            ; 1                    ; Untyped                                             ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                             ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                             ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                             ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                             ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                             ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                             ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                             ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                             ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                             ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                             ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                             ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                             ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                             ;
+; RAM_BLOCK_TYPE                     ; M10K                 ; Untyped                                             ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                             ;
+; INIT_FILE                          ; my_array.mif         ; Untyped                                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                             ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                             ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                             ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                             ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                             ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                             ;
+; CBXI_PARAMETER                     ; altsyncram_3gq1      ; Untyped                                             ;
++------------------------------------+----------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binarySearch:task2|binarySearch_datapath:d_init ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; W              ; 8     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                               ;
++-------------------------------------------+--------------------------------------------------------------------+
+; Name                                      ; Value                                                              ;
++-------------------------------------------+--------------------------------------------------------------------+
+; Number of entity instances                ; 1                                                                  ;
+; Entity Instance                           ; binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                        ;
+;     -- WIDTH_A                            ; 8                                                                  ;
+;     -- NUMWORDS_A                         ; 32                                                                 ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                       ;
+;     -- WIDTH_B                            ; 1                                                                  ;
+;     -- NUMWORDS_B                         ; 1                                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                       ;
+;     -- RAM_BLOCK_TYPE                     ; M10K                                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                          ;
++-------------------------------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binarySearch:task2|ram32x8:dataSet"                                                                                                         ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; data ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; wren ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bitCounter:task1"                                                                           ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; result[7..5] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "seg7:disp1"      ;
++-----------+-------+----------+--------------+
+; Port      ; Type  ; Severity ; Details      ;
++-----------+-------+----------+--------------+
+; hex[3..1] ; Input ; Info     ; Stuck at GND ;
++-----------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 48                          ;
+;     ENA               ; 7                           ;
+;     ENA SCLR          ; 5                           ;
+;     ENA SLD           ; 20                          ;
+;     SCLR              ; 4                           ;
+;     plain             ; 12                          ;
+; arriav_lcell_comb     ; 93                          ;
+;     arith             ; 10                          ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 4                           ;
+;     normal            ; 78                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 17                          ;
+;         4 data inputs ; 27                          ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 12                          ;
+;     shared            ; 5                           ;
+;         2 data inputs ; 5                           ;
+; boundary_port         ; 39                          ;
+; stratixv_ram_block    ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.08                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Sat May 09 12:23:04 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file ram32x8.v
+    Info (12023): Found entity 1: ram32x8 File: C:/Users/stlp/Documents/Lab_4_final/ram32x8.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file bitcounter_tb.sv
+    Info (12023): Found entity 1: bitCounter_tb File: C:/Users/stlp/Documents/Lab_4_final/bitCounter_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bitcounter_datapath.sv
+    Info (12023): Found entity 1: bitCounter_datapath File: C:/Users/stlp/Documents/Lab_4_final/bitCounter_datapath.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file bitcounter_controller.sv
+    Info (12023): Found entity 1: bitCounter_controller File: C:/Users/stlp/Documents/Lab_4_final/bitCounter_controller.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file bitcounter.sv
+    Info (12023): Found entity 1: bitCounter File: C:/Users/stlp/Documents/Lab_4_final/bitCounter.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file binarysearch_tb.sv
+    Info (12023): Found entity 1: binarySearch_tb File: C:/Users/stlp/Documents/Lab_4_final/binarySearch_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file binarysearch_datapath.sv
+    Info (12023): Found entity 1: binarySearch_datapath File: C:/Users/stlp/Documents/Lab_4_final/binarySearch_datapath.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file binarysearch_controller.sv
+    Info (12023): Found entity 1: binarySearch_controller File: C:/Users/stlp/Documents/Lab_4_final/binarySearch_controller.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file binarysearch.sv
+    Info (12023): Found entity 1: binarySearch File: C:/Users/stlp/Documents/Lab_4_final/binarySearch.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff.sv
+    Info (12023): Found entity 1: D_FF File: C:/Users/stlp/Documents/Lab_4_final/D_FF.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file seg7.sv
+    Info (12023): Found entity 1: seg7 File: C:/Users/stlp/Documents/Lab_4_final/seg7.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file de1_soc_tb.sv
+    Info (12023): Found entity 1: DE1_SoC_tb File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC_tb.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
+    Info (12023): Found entity 1: DE1_SoC File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file t1_controller.sv
+    Info (12023): Found entity 1: t1_controller File: C:/Users/stlp/Documents/Lab_4_final/t1_controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file t1_datapath.sv
+    Info (12023): Found entity 1: t1_datapath File: C:/Users/stlp/Documents/Lab_4_final/t1_datapath.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file t1.sv
+    Info (12023): Found entity 1: t1 File: C:/Users/stlp/Documents/Lab_4_final/t1.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file t1_tb.sv
+    Info (12023): Found entity 1: t1_tb File: C:/Users/stlp/Documents/Lab_4_final/t1_tb.sv Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at DE1_SoC.sv(45): created implicit net for "task_toggle" File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 45
+Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at DE1_SoC.sv(45): object "task_toggle" assigned a value but never read File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 45
+Info (12128): Elaborating entity "D_FF" for hierarchy "D_FF:key0_sync" File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 34
+Info (12128): Elaborating entity "seg7" for hierarchy "seg7:disp0" File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 51
+Info (12128): Elaborating entity "bitCounter" for hierarchy "bitCounter:task1" File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 60
+Info (12128): Elaborating entity "bitCounter_controller" for hierarchy "bitCounter:task1|bitCounter_controller:c_unit" File: C:/Users/stlp/Documents/Lab_4_final/bitCounter.sv Line: 14
+Info (12128): Elaborating entity "bitCounter_datapath" for hierarchy "bitCounter:task1|bitCounter_datapath:d_init" File: C:/Users/stlp/Documents/Lab_4_final/bitCounter.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at bitCounter_datapath.sv(25): truncated value with size 32 to match size of target (8) File: C:/Users/stlp/Documents/Lab_4_final/bitCounter_datapath.sv Line: 25
+Info (12128): Elaborating entity "binarySearch" for hierarchy "binarySearch:task2" File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 62
+Info (12128): Elaborating entity "ram32x8" for hierarchy "binarySearch:task2|ram32x8:dataSet" File: C:/Users/stlp/Documents/Lab_4_final/binarySearch.sv Line: 29
+Info (12128): Elaborating entity "altsyncram" for hierarchy "binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component" File: C:/Users/stlp/Documents/Lab_4_final/ram32x8.v Line: 86
+Info (12130): Elaborated megafunction instantiation "binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component" File: C:/Users/stlp/Documents/Lab_4_final/ram32x8.v Line: 86
+Info (12133): Instantiated megafunction "binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/stlp/Documents/Lab_4_final/ram32x8.v Line: 86
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "my_array.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "32"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "M10K"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "5"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3gq1.tdf
+    Info (12023): Found entity 1: altsyncram_3gq1 File: C:/Users/stlp/Documents/Lab_4_final/db/altsyncram_3gq1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_3gq1" for hierarchy "binarySearch:task2|ram32x8:dataSet|altsyncram:altsyncram_component|altsyncram_3gq1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "binarySearch_controller" for hierarchy "binarySearch:task2|binarySearch_controller:c_unit" File: C:/Users/stlp/Documents/Lab_4_final/binarySearch.sv Line: 32
+Info (12128): Elaborating entity "binarySearch_datapath" for hierarchy "binarySearch:task2|binarySearch_datapath:d_init" File: C:/Users/stlp/Documents/Lab_4_final/binarySearch.sv Line: 33
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 8
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 8
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 8
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 8
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 8
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 8
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 8
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 8
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 7 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 7
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 9
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.sv Line: 9
+Info (21057): Implemented 148 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 101 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4844 megabytes
+    Info: Processing ended: Sat May 09 12:23:13 2026
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/stlp/Documents/Lab_4_final/DE1_SoC.map.smsg.
+
+

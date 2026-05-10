@@ -1,0 +1,54 @@
+/*Top Level module for 32x3 RAM connections to hardware
+*/
+module DE1_SoC #(parameter A=5, D=3)
+                (CLOCK_50, HEX0, HEX1, HEX4, HEX5, SW, KEY);
+  input  logic       CLOCK_50;  // 50MHz clock
+  output logic [6:0] HEX0, HEX1, HEX4, HEX5;  // active low
+  input  logic [8:0] SW;
+  input  logic [3:0] KEY; //active low
+  
+  //logic for RAM
+  logic [A-1:0] addr; //5 bit address
+  logic [D-1:0] din; //3 bit data in
+  logic [D-1:0] dout; //3 bit data out
+  logic clk; //clock input separate from clock_50?
+  
+  //HARDWARE CONNECTIONS: ------------------------------------------------
+  //controlling DataIn and Addr using SW
+  //din is connected to [SW3-SW1]
+  assign din = SW[3:1];
+  //addr is connected to [SW8-SW4]
+  assign addr = SW[8:4];
+  //assign SW0 to wren
+  assign wren = SW[0];
+  //KEY0 is clk input;
+  assign clk = KEY[0]; //UPDATE TO CLOCK_50 if things get weird -> clk is 1 when key0 is unpressed (1)
+  
+  //--------------------------------------------------------------------
+  
+//  
+//  //Connect signals for task1, as specified in the header comment
+//  task1 ram1 (.addr, .din, .clk, .wren, .dout);
+  
+  //Connect signals for task2, as specified in the header comment
+  task2 ram2 (.addr, .din, .clk, .wren, .dout);
+  
+  //Connect signals for seg7 as specified in the header comment
+  logic [6:0] hex5_leds, hex4_leds, din_leds, dout_leds;
+ 
+  //Display addr on Hex 5 and Hex 4
+  seg7 addr_lsb (.hex(addr[3:0]), .leds(hex4_leds));
+  seg7 addr_msb (.hex({3'b000, addr[4]}), .leds(hex5_leds));
+  
+  assign HEX5 = hex5_leds;
+  assign HEX4 = hex4_leds;
+
+  //Display datain on HEX1
+  seg7 datain_s7 (.hex({1'b0, din}), .leds(din_leds));
+  seg7 dataout_s7 (.hex({1'b0, dout}), .leds(dout_leds));
+  
+  assign HEX1 = din_leds;
+  assign HEX0 = dout_leds;
+  
+
+endmodule  // DE1_SoC

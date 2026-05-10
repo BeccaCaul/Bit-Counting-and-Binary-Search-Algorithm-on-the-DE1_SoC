@@ -1,0 +1,49 @@
+/* Testbench for Task 1: bit counter */
+module t1_tb (); //t1_tb
+  	parameter W = 8;
+	logic [W-1:0] addr; //5 bit address
+	logic [D-1:0] din; //3 bit data in
+	logic [D-1:0] dout; //3 bit data out
+	logic clk, wren; //1 bit write enable
+
+
+  //instantiate task 1 as dut
+  task1 dut1(.*);
+  task2 dut2(.*);
+  
+  // simulated clock
+	 parameter period = 100;
+	 initial begin
+		clk <= 0;
+		forever
+			#(period/2)
+			clk <= ~clk;
+	end // initial clock
+	
+  
+	initial begin // initial
+		//write ENABLED
+		wren = 1; 															@(posedge clk);
+		//write 000 to Reg 00000
+					  addr = 5'b00000; din = 3'b000;		 		@(posedge clk);
+																	repeat(3)@(posedge clk); //time for dout to update
+		//write 001 to Reg 00001
+					  addr = 5'b00001; din = 3'b001;		 		@(posedge clk);
+																	repeat(3)@(posedge clk); //time for dout to update
+		//write 111 to Reg 11111
+					  addr = 5'b11111; din = 3'b111;		 		@(posedge clk);
+																	repeat(3)@(posedge clk); //time for dout to update
+		//write DISABLED
+		wren = 0; 															@(posedge clk);
+		//try to write 111 to Reg 00001 (shouldn't change)
+					  addr = 5'b00001; din = 3'b111;		 		@(posedge clk);
+					  
+																	repeat(5)@(posedge clk);
+	 
+		$stop;
+	
+	end //initial
+
+	
+	
+endmodule  // t1_tb
