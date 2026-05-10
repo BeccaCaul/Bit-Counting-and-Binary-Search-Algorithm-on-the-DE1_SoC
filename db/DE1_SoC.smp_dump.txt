@@ -1,0 +1,17 @@
+
+State Machine - |DE1_SoC|binarySearch:task2|binarySearch_controller:c_unit|ps
+Name ps.NOTFOUND ps.FOUND ps.UPDATE ps.REGMEM ps.COMPARE ps.WAIT ps.INIT ps.IDLE 
+ps.IDLE 0 0 0 0 0 0 0 0 
+ps.INIT 0 0 0 0 0 0 1 1 
+ps.WAIT 0 0 0 0 0 1 0 1 
+ps.COMPARE 0 0 0 0 1 0 0 1 
+ps.REGMEM 0 0 0 1 0 0 0 1 
+ps.UPDATE 0 0 1 0 0 0 0 1 
+ps.FOUND 0 1 0 0 0 0 0 1 
+ps.NOTFOUND 1 0 0 0 0 0 0 1 
+
+State Machine - |DE1_SoC|bitCounter:task1|bitCounter_controller:c_unit|ps
+Name ps.S1 ps.S3 ps.S2 
+ps.S1 0 0 0 
+ps.S2 1 0 1 
+ps.S3 1 1 0 

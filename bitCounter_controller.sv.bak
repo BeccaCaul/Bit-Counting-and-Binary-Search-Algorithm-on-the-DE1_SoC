@@ -1,0 +1,18 @@
+module bitCounter_controller ();
+
+  
+  typedef enum logic [1:0] {S1, S2, S3} statetype;
+  statetype ps, ns;
+ 
+  always_comb begin
+	   case (ps)
+			 S1: ns = s ? S2 : S0;
+			 S2: ns = A ? S2 : S0;
+		 	 S3: ns = s ? S3 : S1;
+			 default: ns = S1;
+	   endcase
+  end
+  
+  
+  
+endmodule
