@@ -1,0 +1,30 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /DE1_SoC_tb/CLOCK_50
+add wave -noupdate -radix binary /DE1_SoC_tb/HEX0
+add wave -noupdate -radix binary -radixshowbase 0 /DE1_SoC_tb/HEX1
+add wave -noupdate {/DE1_SoC_tb/SW[9]}
+add wave -noupdate /DE1_SoC_tb/SW
+add wave -noupdate {/DE1_SoC_tb/LEDR[9]}
+add wave -noupdate {/DE1_SoC_tb/LEDR[0]}
+add wave -noupdate -label {KEY[3] ~start} {/DE1_SoC_tb/KEY[3]}
+add wave -noupdate -label {KEY[0] ~reset} {/DE1_SoC_tb/KEY[0]}
+add wave -noupdate -radix unsigned -radixshowbase 0 /DE1_SoC_tb/i
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {384250 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {384100 ps} {388100 ps}
