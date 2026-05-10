@@ -1,4 +1,4 @@
-# Bit counting and Binary search implemented on the Terasic DE1-SoC
+# Bit counting and binary search algorithm implemented on the Terasic DE1-SoC
 Top Level Block Diagram:
 <img width="449" height="334" alt="image" src="https://github.com/user-attachments/assets/907a21dd-944b-4d83-9ac5-4aab7a690ab6" />
 Bit Counting ASMD and Block Diagram:
