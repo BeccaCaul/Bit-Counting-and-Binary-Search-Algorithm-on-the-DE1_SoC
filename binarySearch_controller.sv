@@ -52,7 +52,7 @@ module binarySearch_controller (
 	
 	assign update_high = (ps == UPDATE) && val_lt_mid;
    assign update_low  = (ps == UPDATE) && val_gt_mid;
-	assign set_Loc = (ps == COMPARE);
+	assign set_Loc = (ns == FOUND);
 	assign found = (ps == FOUND);
 	assign done = (ps == FOUND || ps == NOTFOUND);
 	
